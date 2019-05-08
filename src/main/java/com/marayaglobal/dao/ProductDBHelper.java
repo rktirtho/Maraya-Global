@@ -3,20 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dao;
+package com.marayaglobal.dao;
 
-import static com.dao.AddressDBHelper.AREA_NAME;
-import static com.dao.AddressDBHelper.DISTRICT;
-import static com.dao.AddressDBHelper.POST_CODE;
-import static com.dao.AddressDBHelper.STREET_NAME;
-import static com.dao.AddressDBHelper.USER_ID;
-import com.tirtho.beans.product.Product;
-import com.tirtho.beans.user.Address;
+
+import com.marayaglobal.product.Product;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -43,7 +37,7 @@ public class ProductDBHelper {
     public static String IS_PUBLISHED = "isPublished";
     public static String DESCRIPTION = "description";
     public static String ADD_TIME = "add_time";
-//    public static List<String> images;
+    
 
     static DatabaseConnector dbConnection = DatabaseConnector.getInstance();
     static PreparedStatement statement = null;
@@ -51,7 +45,7 @@ public class ProductDBHelper {
     static Connection connection = null;
 
     public static void main(String[] args) {
-        List<Product> all = getAllByCategory("Bangla",10,20);
+        List<Product> all = getAllByKeyword("Spring Roll",1,10);
         for (Product arg : all) {
             System.out.println(arg);
         }
@@ -59,7 +53,7 @@ public class ProductDBHelper {
 
 
 
-    private static List<Product> getAll() {
+    public static List<Product> getAll() {
         List<Product> products = new ArrayList<>();
         connection = dbConnection.getConnection();
         try {
@@ -73,100 +67,28 @@ public class ProductDBHelper {
             }
         } catch (SQLException ex) {
             Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
+        }finally {
             try {
-                if (!connection.isClosed()) {
+                if (connection!=null) {
                     connection.close();
                 }
-                if (!statement.isClosed()) {
+                if (statement!=null) {
                     statement.close();
                 }
-                if (!rs.isClosed()) {
+                if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        } 
         return products;
     }
-     private static List<Product> getAll(int start, int end) {
+     public static List<Product> getAll(int start, int end) {
         List<Product> products = new ArrayList<>();
         connection = dbConnection.getConnection();
         try {
             String query = "SELECT * FROM " + TABLE_NAME +" order by id LIMIT "+start+","+ end;
-            statement = connection.prepareCall(query);
-            rs = statement.executeQuery();
-            while (rs.next()) {
-                Product product = new Product();
-                inputer(rs, product);
-                products.add(product);
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                if (!connection.isClosed()) {
-                    connection.close();
-                }
-                if (!statement.isClosed()) {
-                    statement.close();
-                }
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException ex) {
-                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        return products;
-    }
-      private static List<Product> getAllByAuthorId(int authorId, int start, int end) {
-        List<Product> products = new ArrayList<>();
-        connection = dbConnection.getConnection();
-        try {
-            String query = "SELECT * FROM " + TABLE_NAME 
-                    +" where "+AUTHOR_ID+"=? order by id LIMIT "+start+","+ end;
-            statement = connection.prepareCall(query);
-            statement.setString(1, AUTHOR_ID);
-            rs = statement.executeQuery();
-            while (rs.next()) {
-                Product product = new Product();
-                inputer(rs, product);
-                products.add(product);
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                if (!connection.isClosed()) {
-                    connection.close();
-                }
-                if (!statement.isClosed()) {
-                    statement.close();
-                }
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException ex) {
-                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        return products;
-    }
-     
-     
-     private static List<Product> getAllByKeyWord(String keyword, int start, int end) {
-        List<Product> products = new ArrayList<>();
-        connection = dbConnection.getConnection();
-        try {
-            String query = "SELECT * FROM " + TABLE_NAME +" where "
-                    +TITLE+" LIKE \'"+keyword+" OR "
-                    +CATEGORY+" LIKE \'"+keyword +" OR "
-                    +SUB_CATEGORY+" LIKE \'"+keyword +" OR "
-                    +DESCRIPTION+" LIKE \'"+keyword +" OR "
-                    +"\' order by id LIMIT "+start+","+ end;
-            
             statement = connection.prepareCall(query);
             rs = statement.executeQuery();
             while (rs.next()) {
@@ -193,8 +115,83 @@ public class ProductDBHelper {
         }
         return products;
     }
+      public static List<Product> getAllByAuthorId(int authorId, int start, int end) {
+        List<Product> products = new ArrayList<>();
+        connection = dbConnection.getConnection();
+        try {
+            String query = "SELECT * FROM " + TABLE_NAME 
+                    +" where "+AUTHOR_ID+"=? order by id LIMIT "+start+","+ end;
+            statement = connection.prepareCall(query);
+            statement.setString(1, AUTHOR_ID);
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                Product product = new Product();
+                inputer(rs, product);
+                products.add(product);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (connection!=null) {
+                    connection.close();
+                }
+                if (statement!=null) {
+                    statement.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return products;
+    }
      
-     private static List<Product> getAllByCategory(String Catgory, int start, int end) {
+     
+     public static List<Product> getAllByKeyword(String keyword, int start, int end) {
+        List<Product> products = new ArrayList<>();
+        connection = dbConnection.getConnection();
+         System.out.println("com.marayaglobal.dao.ProductDBHelper.getAllByKeyword() test beta");
+        try {
+            String query = "SELECT * FROM " + TABLE_NAME +" where "
+                    +TITLE+" LIKE \""+keyword+"\" OR "
+                    +CATEGORY+" LIKE \""+keyword +"\" OR "
+                    +SUB_CATEGORY+" LIKE \""+keyword +"\" OR "
+                    +DESCRIPTION+" LIKE \""+keyword +"\" "
+                    +" order by id LIMIT "+start+","+ end;
+            
+            statement = connection.prepareCall(query);
+            System.out.println("com.marayaglobal.dao.ProductDBHelper.getAllByKeyword()"
+                    + statement.getFetchSize());
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                Product product = new Product();
+                inputer(rs, product);
+                products.add(product);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (connection!=null) {
+                    connection.close();
+                }
+                if (statement!=null) {
+                    statement.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return products;
+    }
+     
+     public static List<Product> getAllByCategory(String Catgory, int start, int end) {
         List<Product> products = new ArrayList<>();
         connection = dbConnection.getConnection();
         try {
@@ -237,6 +234,7 @@ public class ProductDBHelper {
         product.setSubCategory(rs.getString(SUB_CATEGORY));
         product.setBrandName(rs.getString(BRAND_NAME));
         product.setUnitSize(rs.getString(UNIT_SIZE));
+//        product.setImages(ProductImageDBHelper.images(product.getId()));
         product.setDescription(rs.getString(DESCRIPTION));
         product.setUnitPrice(rs.getFloat(UNIT_PRICE));
         product.setDiscount(rs.getFloat(DISCOUNT));
@@ -245,6 +243,7 @@ public class ProductDBHelper {
         product.setAdd_time(rs.getTimestamp(ADD_TIME));
         product.setIsPublished(rs.getBoolean(IS_PUBLISHED));
         product.setIsAvailable(rs.getBoolean(IS_AVAILABLE));
+        
 
     }
 }

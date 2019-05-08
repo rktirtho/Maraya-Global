@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dao;
+package com.marayaglobal.dao;
 
-import static com.dao.CustomerDBHelper.NAME;
-import static com.dao.CustomerDBHelper.connection;
-import com.tirtho.beans.user.Address;
-import com.tirtho.beans.user.Customer;
+import static com.marayaglobal.dao.CustomerDBHelper.NAME;
+import static com.marayaglobal.dao.CustomerDBHelper.connection;
+import com.marayaglobal.beans.user.Address;
+import com.marayaglobal.beans.user.Customer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

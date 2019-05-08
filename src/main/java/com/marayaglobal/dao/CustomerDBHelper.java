@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dao;
+package com.marayaglobal.dao;
 
-import com.tirtho.beans.user.Customer;
+import com.marayaglobal.beans.user.Customer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2019, 9:16:52 PM
+    Author     : DELL
+*/
+
+.card-image{
+    height: 275px;
+    width: 100%;
+}
+.container-fluid{
+    width:90%
+}
+.newData{
+    height: 2000px;
+    background-color: #1c7430
+}
+
+.loader {
+    width: 300px;
+    margin: 0 auto;
+}
+.price{
+    width: 50%;
+    font-size: 20px;
+    color: #cc0000;
+
+    float: left
+}
+.price del{
+    color: #666666
+}
+.add-card{
+    width: 50%;
+}
+.add-card button{
+    width: 100%;
+    text-align: center;
+    
+    height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'roboto','droid';
+    background: #FF481F;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.site_main_wrapper{
+    max-width: 90%;
+}

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dao;
+package com.marayaglobal.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -74,6 +74,13 @@ public class DatabaseConnector {
             + "  `creation_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,"
             + "  PRIMARY KEY (`id`)"
             + ")";
+     
+     private final static String TABLE_CREATION_COMMAND_IMAGE = EXIST_CHECK +  ProductImageDBHelper.TABLE_NAME+ " ("
+            + ProductImageDBHelper.ID+" int(20) NOT NULL AUTO_INCREMENT,"
+            + ProductImageDBHelper.PID+ " int(20) NOT NULL,"
+            + ProductImageDBHelper.URL+ " varchar(255) NOT NULL,"
+            + "  PRIMARY KEY (`id`)"
+            + ")";
 
     private DatabaseConnector() {
          
@@ -97,6 +104,7 @@ public class DatabaseConnector {
             statement.executeUpdate(TABLE_CREATION_COMMAND_CUSTOMER);
             statement.executeUpdate(TABLE_CREATION_COMMAND_PRODUCT);
             statement.executeUpdate(TABLE_CREATION_COMMAND_ADDRESS);
+            statement.executeUpdate(TABLE_CREATION_COMMAND_IMAGE);
 
 //            
 

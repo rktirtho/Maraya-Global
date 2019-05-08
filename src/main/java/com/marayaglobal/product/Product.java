@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.tirtho.beans.product;
+package com.marayaglobal.product;
 
 import java.sql.Timestamp;
 import java.util.List;

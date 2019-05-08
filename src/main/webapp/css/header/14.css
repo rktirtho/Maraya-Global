@@ -1,0 +1,151 @@
+.subscribe_popup {
+    position        : fixed;
+    width           : 600px;
+    height          : 200px;
+    background      : #fff;
+    z-index         : 299;
+    left            : 0px;
+    right           : 0px;
+    margin          : 0 auto;
+    /*top             : 30%;*/
+    bottom          : 0px;
+    padding         : 20px;
+    display         : none;
+    box-shadow      : 0px 0px 10px 3px #555;
+    box-sizing      : border-box;
+}
+
+.subscribe_popup_head{
+    background      : url('images/newsletter-icon.png') no-repeat 20px 6px;
+    padding-left    : 110px; 
+    overflow        : hidden;
+    border-bottom   : dashed 1px #ddd;
+    padding-bottom  : 20px; 
+    margin-bottom   : 20px;
+    position        : relative;
+}
+
+.ln-ar .subscribe_popup_head{
+    background      : url('images/newsletter-icon.png') no-repeat 97% 6px;
+    padding-right   : 110px; 
+}
+
+.subscribe_popup_head b,
+.subscribe_popup_head p{
+    display         : block;
+}
+
+.subscribe_popup_head b {
+    font-size       : 15px;
+    text-transform  : uppercase;
+    margin          : 0px 0px 10px;
+    padding-top     : 10px;
+}
+
+.subscribe_popup_head p{
+    line-height     : 18px;
+    color           : #666;
+    font-size       : 13px;
+}
+
+.subscribe_popup form input[type="text"]{
+	float: left;
+    width: 69%;
+    height: 45px;
+    font-size: 14px;
+    border: solid 1px #ddd;
+    line-height: normal;
+    padding: 0 0 0 5px;
+}
+
+.ln-ar .subscribe_popup form input[type="text"]{
+	float: right;
+	padding: 0 5px 0 0;
+}
+
+.subscribe_popup form input[type="submit"]{
+    height          : 47px;
+    width           : 29%;
+    font-size       : 14px;
+    text-transform  : uppercase;
+    margin          : 0px;
+    padding         : 0px;
+    border          : 0px;
+    line-height     : normal;
+}
+.ln-ar .subscribe_popup form input[type="submit"]{
+    height: 45px;
+}
+.subscribe_popup .close-button{
+    width           : 20px;
+    height          : 20px;
+    background      : url('images/close-button.png') no-repeat center center;
+    position        : absolute;
+    right           : 0px;
+    z-index         : 199;
+    cursor          : pointer;
+}
+
+.ln-ar .subscribe_popup .close-button{
+    right           : auto;
+    left            : 0px;
+}
+
+.ln-ar .subscribe_popup form input[type="text"]{
+    margin-right    : 0;
+}
+
+.subscribe_popup .newsletter_popup_submit.nl_req_processing {
+    padding-left                : 12px;
+    background                  : #E5E5E5 url(images/button-loader-new.gif) no-repeat 7px center;
+    background-size             : 15px;
+    color                       : #666;
+    font-size                   : 13px;
+}
+
+.subscribe_popup_box{
+	position: relative;
+}
+
+.subscribe_popup .nl_alert{    
+    position                    : absolute;
+    left                        : 0;
+    top                         : -20px;
+    font-family                 : 'roboto-bold' 'droid';
+    font-weight                 : normal;
+    font-size                   : 12px;
+    margin                      : 5px 0px 5px;
+    display                     : block;
+}
+
+.subscribe_popup .nl_invalid_email{
+    color                       : #D71A21;
+}
+
+.subscribe_popup .nl_subs_success{
+    color                       : #31A013;
+}
+
+.subscribe_popup .nl_already_subs{
+    color                       : #D78D1A;
+}
+
+.subscribe_popup .nl_input_invalid {
+    border                      : 1px solid #D71A21 !important;
+}
+
+.subscribe_popup .nl_input_existing{
+    border                      : 1px solid #D78D1A !important;
+}
+
+.subscribe_popup .nl_input_existing ~ .newsletter_popup_submit{
+    background                  : #D78D1A;
+}
+
+.subscribe_popup .nl_input_success{
+    border                      : 1px solid #31A013 !important;
+}
+
+.subscribe_popup .nl_input_success ~ .newsletter_popup_submit{
+    background                  : #31A013;
+}

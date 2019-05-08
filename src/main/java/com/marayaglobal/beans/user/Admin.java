@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.tirtho.beans.user;
+package com.marayaglobal.beans.user;
 
 import java.util.List;
 

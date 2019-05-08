@@ -5,7 +5,7 @@
  */
 package com.marayaglobal.order;
 
-import com.tirtho.beans.user.Address;
+import com.marayaglobal.beans.user.Address;
 import java.util.List;
 
 /**
