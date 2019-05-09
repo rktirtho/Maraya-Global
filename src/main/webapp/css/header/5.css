@@ -1,0 +1,484 @@
+a:hover{color: initial;}
+.deals {
+    background-color: #ffffff;
+}
+.deals_list {
+    margin: 0px -5px 0px;
+}
+.deals_item {
+    width: 25%;
+    background-position: center 10%;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+}
+
+.aw_imagethmb img{
+    background-color: #fff;
+    width: 270px;
+}
+.deals_bg{
+    background-color: #e6e6e6;
+}
+.deals_loading {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    width: 50px;
+    top: 300px;
+}
+.list_item {
+    border: 1px solid #ddd;
+}
+
+
+.deals_itembottom {
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 0 1px 1px 1px;
+}
+.deals_off {
+    line-height: 35px;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    text-align: center;
+    display: block;
+    color: #444;
+}
+.deals_timer {
+    line-height: 35px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+.deals_image {
+    height: 270px;
+}
+.deals_title {
+    overflow: hidden;
+    height: 38px;
+}
+.deals_title p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+    color: #666;
+}
+.deals_price {
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.deals_price .new_price {
+    display: block;
+    font-size: 20px;
+    color: #d02f37;
+    line-height: 16px;
+}
+.ln-ar .deals_price .new_price {
+    line-height: 13px;
+}
+.deals_price .old_price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+    line-height: 16px;
+    display: block;
+}
+.deals_buynow {
+    line-height: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 55%;
+    font-family: 'roboto-bold','droid-bold';
+}
+.deals_buynow:hover {
+    color: #ffffff;
+}
+.flash_sale_d7_heading{
+    margin: 15px 0 8px 0;
+}
+.flash_sale_d7_heading h2 {
+    font-family: 'roboto', 'droid';
+    font-weight: normal;
+    font-size: 21px;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    color: #333;
+}
+.sticky_header_top{
+    position:fixed !important;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    background-color:#FFF;
+    z-index: 999 !important;
+    height: 38px;
+}
+
+.sticky_header_ctop {
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 999;
+    height: 97px;
+}
+
+.sticky_header_next{
+    position:fixed;
+    top: 34px;
+    left: 0px;
+    width:100%;
+    background-color:#FFF;
+    z-index: 998;
+    box-shadow: 0px 1px 5px #AAA;
+}
+.flyDiv{
+    display: none;
+    width: 295px;
+    height: 378px;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 99999;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.flyDiv img{
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.flashsale_wrapper{
+    background-color: #f5f5f5;
+    padding: 0px !important;
+}
+
+.flashsale_products .deals_list .percent_timer.notimer{
+    border-bottom: 0;
+}
+.flashsale_products .deals_list .percent_timer.notimer .banner{
+    opacity: 0;
+}
+
+.end_timer{
+    display: block;
+    margin: 0 auto;
+}
+.aw_imagethmb{
+    display: table;
+}
+
+.aw_imagethmb_inner{
+    text-align: center;
+    height: 272px;
+    display: block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.aw_imagethmb_inner span.img{
+
+    width: 270px;
+    height: 270px;
+}
+
+.aw_imagethmb_inner .prod-img{
+    -webkit-transition: background-image 0.1s;
+    transition: background-image 0.1s;
+    -webkit-animation: fadeIn 0.1s ease-in 1;
+    -moz-animation: fadeIn 0.1s ease-in 1;
+    -o-animation: fadeIn 0.1s ease-in 1;
+    animation: fadeIn 0.1s ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    height:100%;
+    width:100%;
+}
+
+/* Fix for flash sales timer */
+.flashsale_manualtimer {
+    background-image: url('images/icod_clock.png');
+    background-repeat: no-repeat;
+    background-position: left 10px !important;
+    float: left;
+    padding: 10px 0 0 30px !important;
+    height: 50px;
+}
+.ln-ar .flashsale_manualtimer {
+    float: right;
+    padding: 0px 45px 0 0;
+    background-position: 96% 10px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.deals_count{
+    display: none;
+    z-index: 1000;
+    padding: 8px;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    line-height: 1.2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-family: 'roboto-bold','droid-bold';
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-top-left-radius: 5px;
+}
+
+.ln-ar .deals_count{
+    right: initial;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 1366px) {
+    .deals_count{
+        width: 64px;
+    }
+}
+
+.currency-disp-Y .deals_price .new_price,
+.currency-idr .deals_price .new_price
+{
+    font-size: 16px;
+}
+
+.currency-disp-Y .deals_price .old_price,
+.currency-idr .deals_price .old_price
+{
+    font-size: 12px;
+}
+
+.flashsale_products .deals_load_more{
+    display:none;
+    width: 98%;
+    line-height: 44px;
+    text-align: center;
+    position: relative;
+    height: 44px;
+}
+
+.flashsale_products .deals_load_more a{
+    color: #ffffff !important;
+    width: 50px;
+    background: #D71A21;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 11px;
+    height: 100px;
+    border-radius: 2px;
+}
+
+.ln-ar .flashsale_products .deals_load_more a{
+    line-height: 50px;
+}
+
+.bs_loading{
+    margin-top: 20px;
+}
+
+.aw_btnorange:hover{
+    background: #BE3F00;
+}
+
+.aw_wrapper .flashsale_products .deals_list .deals_item .highly-discounted{
+    position: absolute;
+    right: 10px;
+    margin-top: -24px;
+    opacity: 0.8;
+}
+
+.aw_wrapper .flashsale_products .deals_list .deals_item .highly-discounted span{
+    color: #fff;
+    line-height: 20px;
+    padding: 2px 9px;
+    background-color: #3C4646;
+    font-size: 13px;
+    font-family: 'roboto-bold','droid-bold';
+}
+
+.ln-ar .aw_wrapper .flashsale_products .deals_list .deals_item .highly-discounted{
+    right: initial;
+    left: 10px;
+}
+
+.aw_wrapper .flashsale_products .deals_list .deals_item .bottom_container{
+    position: relative;
+}
+
+.deals_itemtop.list_item.fb_item {
+    border: solid 1px #ffd0b9;
+    background: #fffcfb;
+}
+
+.fb_item .aw_imagethmb_inner {
+    height: 293px;
+}
+
+.fb_item .deals_title {
+    margin-bottom: 10px;
+    padding-top: 0px !important;
+}
+
+.fb_item .deals_title p {
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.fb_item a.outline_btn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #f65101;
+    background: transparent;
+    border-radius: 2px;
+    color: #f65101;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'roboto-bold', 'droid-bold';
+}
+
+/**** Noman CSS ****/
+
+.list_item .buyNowBtn {
+	float: left;
+	position: relative;
+}
+.list_item .buyNowBtn a, .list_item .buyNowWithBtn a {
+  text-decoration: none;
+  background: #fff8ec;
+  border: solid 1px #f9d9a2;
+  height: 45px;
+  padding: 0 0 0 5px;
+  display: block;
+  width: 137px;
+}
+.list_item .buyNowBtn p, .list_item .buyNowWithBtn p {
+  color: #666;
+  font-size: 10px;
+  padding: 0px 0 0px 0;
+  line-height: normal;
+  text-align: left;
+  text-transform: initial;
+}
+.list_item .buyNowBtn .priceStructure, .list_item .buyNowWithBtn .priceStructure {
+  line-height: normal;
+  text-align: left;
+}
+.list_item .buyNowBtn .priceStructure .newPrice, .list_item .buyNowWithBtn .priceStructure .newPrice {
+  color: #333;
+  font-size: 14px;
+  font-family: 'roboto-bold', 'droid-bold';
+  margin: -2px 0 0px 0;
+  position: inherit;
+  display: block;
+}
+.list_item .buyNowBtn .priceStructure .oldPrice, .list_item .buyNowWithBtn .priceStructure .oldPrice {
+  color: #6e6e6e;
+  font-size: 10px;
+  text-decoration: line-through;
+  display: block;
+  position: inherit;
+  margin: -3px 0 0 0;
+}
+.list_item .buyNowBtn a.exec_pop_up:before, .list_item .buyNowWithBtn a.exec_pop_up:before {
+	border-style: solid;
+	border-width: 2px 2px 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	right: 10px;
+	position: absolute;
+	top: 42%;
+	transform: rotate(45deg);
+	vertical-align: top;
+	width: 0.45em;
+	margin-left: 5px;
+	color: #6e6e6e;
+}
+.list_item .buyNowWithBtn {
+	float: right;
+	position: relative;
+}
+.list_item .buyNowWithBtn a {
+	background: #eb4e01;
+	border: solid 1px #eb4e01;
+}
+.list_item .buyNowWithBtn p {
+	color:#fff;
+}
+.list_item .buyNowWithBtn .priceStructure .newPrice {
+	color: #fff;
+}
+.list_item .buyNowWithBtn .priceStructure .oldPrice {
+	color: #ffdbca;
+}
+.list_item .buyNowWithBtn a.exec_pop_up:before {
+	color: #fff;
+}
+.ln-ar .list_item .buyNowBtn {
+  float: right;
+}
+.ln-ar .list_item .buyNowWithBtn {
+  float: left;
+}
+.ln-ar .list_item .buyNowBtn a, .ln-ar .list_item .buyNowWithBtn a {
+  padding: 0 10px 0 0;
+}
+.ln-ar .list_item .buyNowBtn a.exec_pop_up:before, .ln-ar .list_item .buyNowWithBtn a.exec_pop_up:before {
+  right: inherit;
+  left: 5px;
+  transform: rotate(-135deg);
+}
+.ln-ar .list_item .buyNowBtn .priceStructure .oldPrice, .ln-ar .list_item .buyNowWithBtn .priceStructure .oldPrice {
+  text-align: right;
+  margin: -8px 0 0 0;
+}
+.ln-ar .list_item .buyNowBtn .priceStructure .newPrice, .ln-ar .list_item .buyNowWithBtn .priceStructure .newPrice {
+  font-size: 12px;
+  text-align: right;
+  margin: -6px 0 0 0;
+}
+.list_item .buyNowWithBtn .priceStructure .oldPrice span, .list_item .buyNowBtn .priceStructure .oldPrice span  {
+  text-decoration: line-through;
+}
+.list_item .buyNowBtn a.loading:before, .list_item .buyNowWithBtn a.loading:before {
+	display: none;
+}
+.ln-ar .list_item .buyNowBtn p, .ln-ar .list_item .buyNowWithBtn p {
+  text-align: right;
+  margin: -2px 0 0 0;
+}

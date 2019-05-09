@@ -1,0 +1,336 @@
+/*offers landing form*/
+#sop_login_toggle,
+#sop_login {
+    display                     : none;
+}
+.offers_landing .sop_content .sop_form {
+    position                    : relative;
+    width                       : 80%;
+    margin                      : 0px auto 20px;
+}
+.offers_landing .sop_content .sop_form .sop_form_inner {
+    width                       : auto;
+    overflow                    : hidden;
+    margin-top                  : 5px;
+    padding                     : 0px;
+    background                  : #fff;
+    border                      : 1px solid #DDD;
+}
+.offers_landing .sop_content .sop_form .sop_form_title {
+    width                       : 100%;
+    padding                     : 10px 20px;
+    background                  : #f5f5f5 url("images/bg_form_title.png") no-repeat right 20px center;
+    background-size             : 40px;
+    font-size                   : 16px;
+    color                       : #3e3e3e;
+    -webkit-box-sizing          : border-box;
+    -moz-box-sizing             : border-box;
+    box-sizing                  : border-box;
+    
+}
+.offers_landing .sop_content .sop_form .sop_form_title b {
+    font-size                   : 12px;
+    display                     : block;
+    margin-top                  : 5px;
+    font-weight                 : normal;
+}
+.offers_landing .sop_content .sop_form .sop_form_content {
+    padding                     : 0px 20px 20px;
+}
+.offers_landing .sop_content .sop_form .sop_form_content input#sop_form_phone{
+    width                       : 347px !important;  
+}
+.offers_landing .sop_content .sop_form .sop_form_content span.pre {
+    top: 0;
+    left: 0px;
+    height: 40px;
+    width: 15%;
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: 'roboto-bold';
+    color: #717171;
+    background: #dddddd;
+    float: left;
+    text-align: center;
+}
+
+.offers_landing .sop_content .sop_form .sop_form_content select {
+    width                       : 410px;
+    height                      : 40px;
+    padding                     : 10px 5px 10px 5px;
+    font-family                 : 'roboto', 'droid';
+    font-size                   : 13px;
+    border                      : 1px solid #DDD;
+    background                  : #fff url(images/select_arrow_down.png) no-repeat right center;
+    -webkit-appearance          : none;
+    -webkit-border-radius       : 0px;
+    box-sizing                  : border-box;
+}
+.offers_landing .sop_content .sop_form .sop_form_content label {
+    cursor                      : pointer;
+    display                     : block;
+    font-size                   : 14px;
+    color                       : #777;
+    margin                      : 15px 0 5px;
+}
+.offers_landing .sop_content .sop_form .sop_form_content input[type="text"],
+.offers_landing .sop_content .sop_form .sop_form_content input[type="password"] {
+    width                       : 410px;
+    height                      : 40px;
+    font-size                   : 14px;
+    color                       : #333;
+    background                  : #fff;
+    padding                     : 0px 10px;
+    border                      : 1px solid #DDD;
+
+    -webkit-appearance          : none;
+    -webkit-box-sizing          : border-box;
+    box-sizing                  : border-box;
+}
+.offers_landing .sop_content .sop_form .sop_form_content #sop_label_remember,
+.offers_landing .sop_content .sop_form .sop_form_content input[type="checkbox"] {
+    float                       : left;
+    margin-top                  : 7px;
+    outline                     : none;
+}
+.offers_landing .sop_content .sop_form .sop_form_content input[type="checkbox"]:checked,
+.offers_landing .sop_content .sop_form .sop_form_content input[type="checkbox"] {
+    margin                      : 10px 4px 0px 0px;
+    width                       : 13px !important;
+    height                      : 13px !important;
+}
+.offers_landing .sop_content .sop_form .sop_form_content input[type="submit"]{
+    width                       : 410px;
+    height                      : 40px;
+    line-height                 : 40px;
+    color                       : #fff;
+    font-size                   : 16px;
+    font-family                 : 'roboto-bold', 'droid-bold';
+    margin                      : 10px auto 0px;
+    padding                     : 0px;
+    text-align                  : center;
+    background                  : #ce1b1f;
+    border                      : 0px;
+    cursor                      : pointer;
+    text-transform              : uppercase;
+    text-decoration             : none;
+    -webkit-appearance          : none;
+
+}
+.offers_landing .sop_content .sop_form .sop_form_content input[type="submit"]:hover {
+    background-color            : #d62024;
+}
+.offers_landing .sop_content .sop_form .sop_form_content input.loading {
+    cursor                      : default;
+    background                  : #ddd !important;
+    color                       : #666 !important;
+
+    box-shadow                  : 0px 5px 0px 0px #999;
+    -webkit-box-shadow          : 0px 5px 0px 0px #999;
+    -moz-box-shadow             : 0px 5px 0px 0px #999;
+}
+.offers_landing .sop_content .sop_form .sop_form_content p {
+    width                       : auto;
+    margin-top                  : 10px;
+    font-size                   : 13px;
+    color                       : #777;
+    line-height                 : 18px;
+}
+.offers_landing .sop_content .sop_form .sop_form_content .sop_email_error,
+.offers_landing .sop_content .sop_form .sop_form_content .sop_gender_error,
+.offers_landing .sop_content .sop_form .sop_form_content .sop_phone_error
+ {
+    font-size                   : 12px;
+    color                       : #ce1b1f;
+    margin                      : 0px 0px 5px 4px;
+    display                     : none;
+    line-height                 : 20px;
+    position                    : absolute;
+    margin-top                  : -19px;
+    right                       : 27px; 
+}
+.offers_landing .sop_content .sop_form .sop_form_content .error {
+    border                      : 1px solid #ce1b1f !important;
+}
+
+
+.flashsale_manual .sop_form{
+    padding: 15px;
+    float: left;
+    width: 55%;
+    min-height: 385px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flashsale_manual .sop_form .error {
+    border-color: #f00 !important;
+}
+.flashsale_manual .sop_form_inner {
+    background: #ffffff;
+    padding: 15px;
+}
+
+.flashsale_manual .sop_form .sop_form_title {
+    border-bottom: solid 1px #DDD;
+    padding: 0 0 7px 0px;
+    margin: 0 0 10px 0;
+}
+
+.flashsale_manual .sop_form .sop_form_title b{
+    padding: 0 5px;
+}
+
+.flashsale_manual .sop_form .sop_form_content{
+    overflow: hidden;
+}
+
+.flashsale_manual .sop_form .sop_form_content p {
+    height: 20px;
+    line-height: 20px;
+    clear: both;
+    display: block;
+    color: #777777;
+    font-size: 10px;
+}
+.flashsale_manual .sop_form .sop_form_content .gender{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+}
+
+.flashsale_manual .sop_form .sop_form_content .gender label{
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 32px;
+    clear: initial;
+    display: block;
+}
+
+.flashsale_manual .sop_form .sop_form_content label{
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    clear: both;
+}
+
+.flashsale_manual .sop_form .sop_form_content .sop_phone_error,
+.flashsale_manual .sop_form .sop_form_content .sop_email_error{
+    min-height: 0px;
+    line-height: 20px;
+    display: block;
+    clear: both;
+    color: #f00;
+    float: right;
+    position: absolute;
+    margin-top: -20px;
+    right: 30px;
+}
+
+.flashsale_manual .sop_form .sop_form_content .pre{
+    width: 10%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    background-color: #DDD;
+    color: #333;
+    text-align: center;
+}
+
+
+.flashsale_manual .sop_form .sop_form_content select,
+.flashsale_manual .sop_form .sop_form_content input[type="text"]{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    margin: 0 0 7px 0;
+    padding: 0 10px;
+    float: left;
+    font-family: 'roboto', 'droid';
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flashsale_manual .sop_form .sop_form_content select {
+    width: 75%;
+}
+
+.flashsale_manual .sop_form .sop_form_content input[type="text"].sop_form_phone{
+    width: 90%;
+}
+
+.flashsale_manual .sop_form .sop_form_content input[type="radio"]{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 5px;
+}
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content input[type="radio"]{
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+
+.flashsale_manual .sop_form .sop_form_content input[type="submit"]{
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+}
+
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content select{
+   background-position: 10px center; 
+}
+
+.flashsale_manual .sop_form .sop_form_content input[type="submit"].req_processing {
+    padding-left                : 18px;
+    background                  : #E5E5E5 url(images/button-loader-new.gif) no-repeat 7px center;
+    background-size             : 15px;
+    color                       : #666;
+    font-size                   : 13px;
+}
+
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content .sop_email_error,
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content .sop_gender_error,
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content .sop_phone_error
+ {
+    left                       : 27px;
+    right                      : initial; 
+}
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content .sop_phone_error,
+.ln-ar .flashsale_manual .sop_form .sop_form_content .sop_email_error {
+    left: 30px;
+    right: initial;
+}
+
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content span.pre{
+    width: 15%;
+}
+
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content input#sop_form_phone{
+    float: left;
+}
+
+.ln-ar .offers_landing .sop_content .sop_form .sop_form_content span.pre {
+    direction: ltr;
+}
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content select,
+.ln-ar .flashsale_manual .sop_form .sop_form_content input[type="text"],
+.ln-ar .flashsale_manual .sop_form .sop_form_content .gender label,
+.ln-ar .flashsale_manual .sop_form .sop_form_content input[type="radio"]{
+    float: right;
+}
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content input[type="submit"] {
+    font-size: 12px;
+}
+
+.ln-ar .flashsale_manual .sop_form .sop_form_content .pre{
+    direction: ltr;
+}

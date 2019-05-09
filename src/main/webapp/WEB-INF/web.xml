@@ -15,4 +15,24 @@
         <servlet-name>Jersey Web Application</servlet-name>
         <url-pattern>/webapi/*</url-pattern>
     </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <jsp-file>/registration/registration.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>product-registration</servlet-name>
+        <jsp-file>/registration/product-registration.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>product-registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

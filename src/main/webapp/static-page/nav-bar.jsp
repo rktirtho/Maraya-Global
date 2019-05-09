@@ -14,21 +14,134 @@
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="Online shopping in Bangladesh, online shopping BD, Bangladesh online shopping, BD best deals, Deals in BD Daily Deals, Deal of the day, Best Deals" />
         <meta name="description" content="Get the best deals and offers with No.1 Online Shopping in BD Bangladesh, Buy the latest daily deals in BD, deal of the day, mobiles, tablets, laptops and home appliances at low prices and enjoy online shopping with cash on delivery and free deivery* across the Bangladesh." />
-        <link rel="stylesheet" type="text/css" href="../css/header/6.css">
-        <link rel="stylesheet" type="text/css" href="../css/header/8.css">
-        <link rel="stylesheet" type="text/css" href="../css/header/10.css">
-        <link rel="stylesheet" type="text/css" href="../css/header/13.css">
-        <link rel="stylesheet" type="text/css" href="../css/header/14.css">
+        <link rel="stylesheet" type="text/css" href="css/header/6.css">
+        <link rel="stylesheet" type="text/css" href="css/header/1.css">
+        <link rel="stylesheet" type="text/css" href="css/header/2.css">
+        <link rel="stylesheet" type="text/css" href="css/header/3.css">
+        <link rel="stylesheet" type="text/css" href="css/header/4.css">
+        <link rel="stylesheet" type="text/css" href="css/header/5.css">
+        <link rel="stylesheet" type="text/css" href="css/header/7.css">
+        <link rel="stylesheet" type="text/css" href="css/header/9.css">
+        <link rel="stylesheet" type="text/css" href="css/header/8.css">
+        <link rel="stylesheet" type="text/css" href="css/header/10.css">
+        <link rel="stylesheet" type="text/css" href="css/header/11.css">
+        <link rel="stylesheet" type="text/css" href="css/header/12.css">
+        <link rel="stylesheet" type="text/css" href="css/header/13.css">
+        <link rel="stylesheet" type="text/css" href="css/header/14.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <script type="text/javascript">if (!window.BX)window.BX = {message:function(mess){if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i]; return true; }};</script>
+        <script type="text/javascript">(window.BX || top.BX).message({'JS_CORE_LOADING':'Loading...', 'JS_CORE_WINDOW_CLOSE':'Close', 'JS_CORE_WINDOW_EXPAND':'Expand', 'JS_CORE_WINDOW_NARROW':'Restore', 'JS_CORE_WINDOW_SAVE':'Save', 'JS_CORE_WINDOW_CANCEL':'Cancel', 'JS_CORE_H':'h', 'JS_CORE_M':'m', 'JS_CORE_S':'s', 'JS_CORE_NO_DATA':'- No data -', 'JSADM_AI_HIDE_EXTRA':'Hide extra items', 'JSADM_AI_ALL_NOTIF':'All notifications', 'JSADM_AUTH_REQ':'Authentication is required!', 'JS_CORE_WINDOW_AUTH':'Log In', 'JS_CORE_IMAGE_FULL':'Full size'});</script>
+        <script type="text/javascript">(window.BX || top.BX).message({'LANGUAGE_ID':'en', 'FORMAT_DATE':'DD.MM.YYYY', 'FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX':'awok', 'SERVER_TZ_OFFSET':'14400', 'SITE_ID':'s5', 'USER_ID':'', 'SERVER_TIME':'1557308439', 'USER_TZ_OFFSET':'0', 'USER_TZ_AUTO':'Y', 'bitrix_sessid':'455ecd59a3137f2187662bcc7aa183f0'});</script>
 
 
-        <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script><!--<![endif]-->
+
+        <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script><![endif]
         <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/scripts.js?"></script>
+        <script type="text/javascript" src="https://global.awok.com/bitrix/js/main/core/core.js"></script>
         <meta name="msvalidate.01" content="FA70474D3B24F93B1C3F13C58690360C" />
         <meta name="google-site-verification" content="0KsfOXHtHT5IK3f1y5LZznnQ3Mkqy_aijkvKbidBA8Y" />
         <link href="https://www.google.com/+AlifcaUAE/" rel="publisher" />
         <meta name="msvalidate.01" content="DF53B2ACE7B57BF60A098FBDC753A3D0" />
+       <script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Loading...','JS_CORE_WINDOW_CLOSE':'Close','JS_CORE_WINDOW_EXPAND':'Expand','JS_CORE_WINDOW_NARROW':'Restore','JS_CORE_WINDOW_SAVE':'Save','JS_CORE_WINDOW_CANCEL':'Cancel','JS_CORE_H':'h','JS_CORE_M':'m','JS_CORE_S':'s','JS_CORE_NO_DATA':'- No data -','JSADM_AI_HIDE_EXTRA':'Hide extra items','JSADM_AI_ALL_NOTIF':'All notifications','JSADM_AUTH_REQ':'Authentication is required!','JS_CORE_WINDOW_AUTH':'Log In','JS_CORE_IMAGE_FULL':'Full size'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'en','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'awok','SERVER_TZ_OFFSET':'14400','SITE_ID':'s5','USER_ID':'','SERVER_TIME':'1557322974','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'455ecd59a3137f2187662bcc7aa183f0'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?1520245444110032"></script>
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s5");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME") && cookie.UNIQUE && cookie.UNIQUE.length > 0)
+							{
+								for (var i = 0; i < cookie.UNIQUE.length; i++)
+								{
+									if (cookie.UNIQUE[i] == "conversion_visit_day")
+										return;
+								}
+							}
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s5")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/bitrix/templates/awok-lang/css/style-ie8.css" /><![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!--><script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script><!--<![endif]-->
+<script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/cross-fetch.js?"></script>
+<!--[if lt IE 9]><script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery-ie8.js?"></script><![endif]-->
+<script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/scripts.js?"></script>
+<meta name="msvalidate.01" content="FA70474D3B24F93B1C3F13C58690360C" />
+<meta name="google-site-verification" content="0KsfOXHtHT5IK3f1y5LZznnQ3Mkqy_aijkvKbidBA8Y" />
+<link href="https://www.google.com/+AlifcaUAE/" rel="publisher" />
+<meta name="msvalidate.01" content="DF53B2ACE7B57BF60A098FBDC753A3D0" />
+<script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "WebSite",
+                        "name": "Awok",
+                        "url": "https://ae.awok.com/",
+                        "potentialAction": [{
+                            "@type": "SearchAction",
+                            "target": "https://www.awok.com/search/?q={search_term_string}",
+                            "query-input": "required name=search_term_string"
+                            }]
+                    }
+                </script>
+<script type="application/ld+json">
+                        {
+                            "@context" : "http://schema.org",
+                            "@type" : "Organization",
+                            "legalName" : "Awok.com",
+                            "url" : "https://www.awok.com/",
+                            "contactPoint" : [{
+                                "@type" : "ContactPoint",
+                                "telephone" : "+97143604242",
+                                "email" : "info@awok.com",
+                                "contactType" : "customer service"
+                                }],
+                            "logo" : "https://m1.awokcdn.com/bitrix/templates/awok-lang/images/header/awok-online-shopping-logo.png",
+                            "sameAs" : [ "https://www.facebook.com/awok",
+                            "https://plus.google.com/+AWOKcom",
+                            "https://www.youtube.com/c/AWOKcom",
+                            "https://www.linkedin.com/company/awok",
+                            "https://www.wikidata.org/wiki/Q45316136"]
+                        }
+                        </script>
+<!--[if lt IE 8]><meta http-equiv="refresh" content="0;URL=http://www.awok.com/upgrade/"><![endif]-->
+
+
+
+<script type="text/javascript" src="https://global.awok.com//bitrix/templates/awok-lang/components/dev-awok/quick.search/.awok-refactored/script.js?15398625115147"></script>
+<script type="text/javascript" src="https://global.awok.com//bitrix/templates/awok-lang/components/dev-awok/quick.search/.awok-refactored/algoliasearch.js?1539862511135614"></script>
+<script type="text/javascript" src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/mousewheel.js?1520245453"></script>
+<script type="text/javascript" src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/timer.js?1520245453"></script>
+<script type="text/javascript" src="https://global.awok.com//bitrix/templates/awok-lang/components/dev-awok/deals.api/.awok-infscr-clean/script.js?155600110318861"></script>
+<script type="text/javascript" src="https://global.awok.com//bitrix/templates/awok-lang/components/dev-awok/authorize/register-flashpop-ajax/script.js?15202454512429"></script>
+
+
 
 
     </head>
@@ -2125,7 +2238,7 @@
 
                 </div>
             </div>
-            <div class="header_bottom_box">
+            <div class="header_bottom_box ">
                 <div class="site_main_wrapper reset_padding clearFix">
                     <div class="site_main_menu ">
                         <div class="menu_link"><a href="javascript:void(0);" class="drop_link "><i class="fa fa-bars" aria-hidden="true"></i></a></div>
@@ -4701,14 +4814,14 @@
                             </div>
                         </div>
                         <script>
-                            /* Used in detail page components start */
-                            var client = algoliasearch("AMQISAHL10", "1be2331a5f0b81ea0f41945c5f336057", {dsn: true}); // public credentials
-                            var index = client.initIndex('search_AWOKMP');
-                            /* Used in detail page components end */
-                            var in_text = "in";
-                            var results = "results";
-                            var all_cat = "All Categories";
-                            var search_suggest = "Search Suggestions";</script>
+            /* Used in detail page components start */
+            var client = algoliasearch("AMQISAHL10", "1be2331a5f0b81ea0f41945c5f336057", {dsn: true}); // public credentials
+            var index = client.initIndex('search_AWOKMP');
+            /* Used in detail page components end */
+            var in_text = "in";
+            var results = "results";
+            var all_cat = "All Categories";
+            var search_suggest = "Search Suggestions";</script>
                     </div>
                     <div class="header_cart">
                         <a href="/cart/" data-event-category="click_tracking" data-event-action="before_view_cart" data-event-label="header-icon">
@@ -4731,7 +4844,7 @@
                         <div class="user_options_link drop_link cursor_pointer">
                             <span class="user_options_icon"></span>
                             <span class="user_options_info">
-                                <em><a class="login" href="/user/login/">Sign In</a> / <a class="register" href="/user/register/">Register</a></em>
+                                <em><a class="login" href="/user/login/">Sign In</a> / <a class="register" href="signup">Register</a></em>
                                 Welcome Guest                                        </span>
                             <span class="user_options_dropdown">
                                 <i class="flaticon-arrow483"></i>
@@ -4778,7 +4891,7 @@
                                     <div class="form_row">
                                         <div class="register_link">
                                             <p>New customer?</p>
-                                            <a href="/user/register/">REGISTER NOW</a>
+                                            <a href="signup">REGISTER NOW</a>
                                         </div>
                                     </div>
                                 </form>
@@ -4859,178 +4972,178 @@
             var redirectURL = '/?redirect=ae&ship=BD';
             var ConnectCDN = 'https://s5d.awokcdn.com';
             if (popup_box.length > 0) {
-                $(document).ready(function () {
-                    var link = cart_link;
-                    sendAjax(link, function (response) {
-                        popup_container.empty().append(response).removeClass('cloading');
-                        updateCartCount();
-                        dataloaded = true;
-                    });
-                    cart_btn.hoverIntent(onEnter, onLeave, 1000);
-                    $('.buynow').unbind('click');
-                    window.AddedOnce = false;
-                    $(document).on('click', '.exec_pop_up', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        var link = $(this).attr('data-cart-link');
-                        cart = $(this);
-                        cartlink = cart.attr('href');
-                        popup_container.addClass('cloading');
-                        replaceCartlink('loading', cart);
-                        sendAjax(link, function (response) {
+            $(document).ready(function () {
+            var link = cart_link;
+            sendAjax(link, function (response) {
+            popup_container.empty().append(response).removeClass('cloading');
+            updateCartCount();
+            dataloaded = true;
+            });
+            cart_btn.hoverIntent(onEnter, onLeave, 1000);
+            $('.buynow').unbind('click');
+            window.AddedOnce = false;
+            $(document).on('click', '.exec_pop_up', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var link = $(this).attr('data-cart-link');
+            cart = $(this);
+            cartlink = cart.attr('href');
+            popup_container.addClass('cloading');
+            replaceCartlink('loading', cart);
+            sendAjax(link, function (response) {
 
-                            if (AddedOnce == false)
-                                popup_box.show();
-                            AddedOnce = true;
-                            // ADDED BY ANAND FOR STICKY SCROLL TOP PREVENT
-                            if (typeof preventCartScrollTop == 'undefined' || preventCartScrollTop == false) {
-                                $("html, body").animate({scrollTop: "0px"});
-                                var hideDPCartMSecs = 5000;
-                            } else
-                                var hideDPCartMSecs = 1350;
-                            replaceCartlink('viewcart', cart);
-                            popup_container.empty().append(response).removeClass('cloading');
-                            updateCartCount();
-                            setTimeout(function () {
-                                if (onhover == true)
-                                    return;
-                                popup_box.hide();
-                            }, hideDPCartMSecs);
-                            dataloaded = true;
-                            var recommended_acc = $('.description_box_acces.recommended_acc');
-                            var product_all_specs = $('.product_all_specs_wrap');
-                            // SWAP RECOMMENDED
-                            if (parseInt(recommended_acc.length) > 0) {
-                                // IF FREQUENTLY ALL BOUGHT IS PRESENT PUSH IT EVEN BEFORE THAT
-                                if ($('.frequently_bought_wrapper .bought_together_list').length)
-                                    product_all_specs = $('.frequently_bought_wrapper');
-                                // IF SIMILAR ITEMS IS PRESENT PUSH IT EVEN BEFORE THAT
-                                else if ($('.similarProductComparison .compare_head').length)
-                                    product_all_specs = $('.similarProductComparison .compare_head');
-                                var recomm_height = recommended_acc.height();
-                                recommended_acc.css("height", 0);
-                                product_all_specs.before(recommended_acc);
-                                recommended_acc.animate({height: recomm_height}, 3000);
-                            }
-
-                        });
-                        return false;
-                    });
-                    $(document).on('click', '.remove', function (e) {
-                        e.preventDefault();
-                        var link = $(this).attr('href');
-                        var linkpid = $('.buynow').data('pid');
-                        var currentpid = $(this).data('pid');
-                        popup_container.addClass('cloading');
-                        sendAjax(link, function (response) {
-                            popup_container.empty().append(response).removeClass('cloading');
-                            if (linkpid == currentpid) {
-                                replaceCartlink('addcart');
-                            }
-                            updateCartCount();
-                            dataloaded = true;
-                        });
-                    });
-                });
-                function updateCartCount() {
-                    var total_count = popup_container.find('.js_summary').data('total-count');
-                    if (total_count > 0) {
-                        $('.cart_icon span').text(total_count).addClass('number_items').removeClass('zero_number_items');
-                    } else {
-                        $('.cart_icon span').text(total_count).addClass('zero_number_items').removeClass('number_items');
-                    }
-                }
-
-                function onEnter() {
-                    onhover = true;
+            if (AddedOnce == false)
                     popup_box.show();
-                    $('.user_options').removeClass('active');
-                    if ($('.productslist').is(':visible'))
-                        disableScroll();
-                }
+            AddedOnce = true;
+            // ADDED BY ANAND FOR STICKY SCROLL TOP PREVENT
+            if (typeof preventCartScrollTop == 'undefined' || preventCartScrollTop == false) {
+            $("html, body").animate({scrollTop: "0px"});
+            var hideDPCartMSecs = 5000;
+            } else
+                    var hideDPCartMSecs = 1350;
+            replaceCartlink('viewcart', cart);
+            popup_container.empty().append(response).removeClass('cloading');
+            updateCartCount();
+            setTimeout(function () {
+            if (onhover == true)
+                    return;
+            popup_box.hide();
+            }, hideDPCartMSecs);
+            dataloaded = true;
+            var recommended_acc = $('.description_box_acces.recommended_acc');
+            var product_all_specs = $('.product_all_specs_wrap');
+            // SWAP RECOMMENDED
+            if (parseInt(recommended_acc.length) > 0) {
+            // IF FREQUENTLY ALL BOUGHT IS PRESENT PUSH IT EVEN BEFORE THAT
+            if ($('.frequently_bought_wrapper .bought_together_list').length)
+                    product_all_specs = $('.frequently_bought_wrapper');
+            // IF SIMILAR ITEMS IS PRESENT PUSH IT EVEN BEFORE THAT
+            else if ($('.similarProductComparison .compare_head').length)
+                    product_all_specs = $('.similarProductComparison .compare_head');
+            var recomm_height = recommended_acc.height();
+            recommended_acc.css("height", 0);
+            product_all_specs.before(recommended_acc);
+            recommended_acc.animate({height: recomm_height}, 3000);
+            }
 
-                function onLeave() {
-                    if (dataloaded)
-                        popup_box.hide();
-                    onhover = false;
-                    enableScroll();
-                }
+            });
+            return false;
+            });
+            $(document).on('click', '.remove', function (e) {
+            e.preventDefault();
+            var link = $(this).attr('href');
+            var linkpid = $('.buynow').data('pid');
+            var currentpid = $(this).data('pid');
+            popup_container.addClass('cloading');
+            sendAjax(link, function (response) {
+            popup_container.empty().append(response).removeClass('cloading');
+            if (linkpid == currentpid) {
+            replaceCartlink('addcart');
+            }
+            updateCartCount();
+            dataloaded = true;
+            });
+            });
+            });
+            function updateCartCount() {
+            var total_count = popup_container.find('.js_summary').data('total-count');
+            if (total_count > 0) {
+            $('.cart_icon span').text(total_count).addClass('number_items').removeClass('zero_number_items');
+            } else {
+            $('.cart_icon span').text(total_count).addClass('zero_number_items').removeClass('number_items');
+            }
+            }
 
-                function disableScroll() {
-                    var toolbox = $('.productslist'),
-                            height = toolbox.outerHeight(true),
-                            scrollHeight = toolbox.get(0).scrollHeight;
-                    toolbox.bind('mousewheel', function (e, d) {
-                        if ((this.scrollTop === (scrollHeight - height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
-                            e.preventDefault();
-                        }
-                    });
-                }
+            function onEnter() {
+            onhover = true;
+            popup_box.show();
+            $('.user_options').removeClass('active');
+            if ($('.productslist').is(':visible'))
+                    disableScroll();
+            }
 
-                function enableScroll() {
-                    $('.productslist').unbind('mousewheel');
-                }
+            function onLeave() {
+            if (dataloaded)
+                    popup_box.hide();
+            onhover = false;
+            enableScroll();
+            }
 
-                function sendAjax(link, callback) {
-                    $.ajax({
-                        url: link,
-                        dataType: 'html',
-                        success: function (response) {
-                            callback(response);
-                        }
-                    });
-                }
+            function disableScroll() {
+            var toolbox = $('.productslist'),
+                    height = toolbox.outerHeight(true),
+                    scrollHeight = toolbox.get(0).scrollHeight;
+            toolbox.bind('mousewheel', function (e, d) {
+            if ((this.scrollTop === (scrollHeight - height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
+            e.preventDefault();
+            }
+            });
+            }
 
-                function _replaceCartlink(linktype, object) {
-                    if (linktype == 'viewcart') {
-                        object
-                                .text(lang_viewcart)
-                                .attr({href: '/cart/'})
-                                .removeClass('loading exec_pop_up')
-                                .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50', 'text-transform': 'capitalize'});
-                    } else if (linktype == 'loading') {
-                        object.addClass('loading').text(lang_pleasewait)
-                                .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
+            function enableScroll() {
+            $('.productslist').unbind('mousewheel');
+            }
+
+            function sendAjax(link, callback) {
+            $.ajax({
+            url: link,
+                    dataType: 'html',
+                    success: function (response) {
+                    callback(response);
                     }
-                }
+            });
+            }
 
-                function replaceCartlink(linktype, object) {
+            function _replaceCartlink(linktype, object) {
+            if (linktype == 'viewcart') {
+            object
+                    .text(lang_viewcart)
+                    .attr({href: '/cart/'})
+                    .removeClass('loading exec_pop_up')
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50', 'text-transform': 'capitalize'});
+            } else if (linktype == 'loading') {
+            object.addClass('loading').text(lang_pleasewait)
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
+            }
+            }
 
-                    if (typeof object != 'undefined' && object.hasClass("deals_api_bn")) {
-                        if (linktype == 'viewcart') {
-                            $('.exec_pop_up.loading')
-                                    .html('<i class="fa fa-check tick"></i><span>' + lang_viewcart + '</span>')
-                                    .attr({href: '/cart/'})
-                                    .attr({'data-event-action': 'before_view_cart'})
-                                    .removeClass('loading exec_pop_up')
-                                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
-                        } else if (linktype == 'loading') {
-                            object.addClass('loading').html('<i class="fa fa-circle-o-notch fa-spin fa-fw circle"></i><span>' + lang_pleasewait + '</span>')
-                                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
-                        }
-                    } else {
-                        if (linktype == 'viewcart') {
-                            $('.exec_pop_up.loading')
-                                    .text(lang_viewcart)
-                                    .attr({href: '/cart/'})
-                                    .attr({'data-event-action': 'before_view_cart'})
-                                    .removeClass('loading exec_pop_up')
-                                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50', 'text-transform': 'capitalize'});
-                        } else if (linktype == 'loading') {
-                            object.addClass('loading').text(lang_pleasewait)
-                                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
-                        }
-                    }
-                }
+            function replaceCartlink(linktype, object) {
+
+            if (typeof object != 'undefined' && object.hasClass("deals_api_bn")) {
+            if (linktype == 'viewcart') {
+            $('.exec_pop_up.loading')
+                    .html('<i class="fa fa-check tick"></i><span>' + lang_viewcart + '</span>')
+                    .attr({href: '/cart/'})
+                    .attr({'data-event-action': 'before_view_cart'})
+                    .removeClass('loading exec_pop_up')
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
+            } else if (linktype == 'loading') {
+            object.addClass('loading').html('<i class="fa fa-circle-o-notch fa-spin fa-fw circle"></i><span>' + lang_pleasewait + '</span>')
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
+            }
+            } else {
+            if (linktype == 'viewcart') {
+            $('.exec_pop_up.loading')
+                    .text(lang_viewcart)
+                    .attr({href: '/cart/'})
+                    .attr({'data-event-action': 'before_view_cart'})
+                    .removeClass('loading exec_pop_up')
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50', 'text-transform': 'capitalize'});
+            } else if (linktype == 'loading') {
+            object.addClass('loading').text(lang_pleasewait)
+                    .css({'background': '#F5F5F5', 'color': '#4CAF50', 'border': '1px solid #4CAF50'});
+            }
+            }
+            }
 
             }
 
             $(document).ready(function () {
-                /* Show/Hide mobile verify popup */
-                $(document).on("click", "#js-verify-phone-number", function (e) {
-                    $('#js-verify-phone-popup .modal').show();
-                    $('#js-verify-phone-popup .modal-backdrop').show();
-                });
+            /* Show/Hide mobile verify popup */
+            $(document).on("click", "#js-verify-phone-number", function (e) {
+            $('#js-verify-phone-popup .modal').show();
+            $('#js-verify-phone-popup .modal-backdrop').show();
+            });
             });</script><!--Subscribe Newsletter Popup Start-->
         <div class="subscribe_popup">
             <div class="subscribe_popup_head">

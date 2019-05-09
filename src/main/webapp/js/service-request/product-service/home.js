@@ -50,7 +50,7 @@ console.log(Math.ceil(($(window).scrollTop())));
         data.forEach(function (item) {
             $(".all-item").append(
                     "<div class='col-md-3 py-4'>" + "<div class='card'>"
-                    + "<img class='card-image' src='http://lorempixel.com/400/200/sports/" + Math.ceil(Math.random() * 10) + "'/>"
+                    + "<img class='card-image p-2' src='http://lorempixel.com/400/200/sports/" + Math.ceil(Math.random() * 10) + "'/>"
                     + " <div class='card-body'>"
                     + "<h4 class='card-title'>" +
                     item.title
