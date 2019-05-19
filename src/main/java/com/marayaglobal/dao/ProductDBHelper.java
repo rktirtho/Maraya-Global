@@ -45,10 +45,11 @@ public class ProductDBHelper {
     static Connection connection = null;
 
     public static void main(String[] args) {
-        List<Product> all = getAllByKeyword("Spring Roll",1,10);
-        for (Product arg : all) {
-            System.out.println(arg);
-        }
+//        List<Product> all = getAllByKeyword("Spring Roll",1,10);
+//        for (Product arg : all) {
+//            System.out.println(arg);
+//        }
+System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
     }
 
 
@@ -58,6 +59,38 @@ public class ProductDBHelper {
         connection = dbConnection.getConnection();
         try {
             String query = "SELECT * FROM " + TABLE_NAME;
+            statement = connection.prepareCall(query);
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                Product product = new Product();
+                inputer(rs, product);
+                products.add(product);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+        }finally {
+            try {
+                if (connection!=null) {
+                    connection.close();
+                }
+                if (statement!=null) {
+                    statement.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } 
+        return products;
+    }
+    
+    public static List<Product> getById(int id) {
+        List<Product> products = new ArrayList<>();
+        connection = dbConnection.getConnection();
+        try {
+            String query = "SELECT * FROM " + TABLE_NAME+" where id="+id;
             statement = connection.prepareCall(query);
             rs = statement.executeQuery();
             while (rs.next()) {

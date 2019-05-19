@@ -18,7 +18,9 @@ public class User {
     private String phoneNumber;
     private String password;
     private boolean isActive;
+    private String session;
     private Timestamp accCreateTime;
+    private Timestamp lastAccessTime;
 
     public int getId() {
         return id;
@@ -75,8 +77,34 @@ public class User {
     public void setAccCreateTime(Timestamp accCreateTime) {
         this.accCreateTime = accCreateTime;
     }
+    
 
-    @Override
+    public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+
+	public String getSession() {
+		return session;
+	}
+
+	public void setSession(String session) {
+		this.session = session;
+	}
+	
+	
+	public Timestamp getLastAccessTime() {
+		return lastAccessTime;
+	}
+
+	public void setLastAccessTime(Timestamp lastAccessTime) {
+		this.lastAccessTime = lastAccessTime;
+	}
+
+	@Override
     public String toString() {
         return "User{" + "id=" + id + ", name=" + name + ", email=" + email + ", phoneNumber=" + phoneNumber + ", password=" + password + ", isActive=" + isActive + ", accCreateTime=" + accCreateTime + '}';
     }

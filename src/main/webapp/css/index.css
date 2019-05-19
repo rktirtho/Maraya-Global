@@ -7,90 +7,125 @@ and open the template in the editor.
     Created on : May 7, 2019, 9:16:52 PM
     Author     : DELL
 */
+.card-image {
+	height: 275px;
+	width: 100%;
+}
 
-.card-image{
-    height: 275px;
-    width: 100%;
-}
-.container-fluid{
-    width:90%
-}
-.newData{
-    height: 2000px;
-    background-color: #1c7430
+.container-fluid {
+	width: 90%
 }
 
 .loader {
-    width: 300px;
-    margin: 0 auto;
-}
-.price{
-    width: 50%;
-    font-size: 20px;
-    color: #cc0000;
-
-    float: left
-}
-.price del{
-    color: #666666
-}
-.add-card{
-    width: 50%;
-}
-.add-card button{
-    width: 100%;
-    text-align: center;
-    
-    height: 40px;
-    font-size: 14px;
-    color: #ffffff;
-    font-family: 'roboto','droid';
-    background: #FF481F;
-    position: relative;
-    display: block;
-    text-transform: uppercase;
-
+	width: 300px;
+	margin: 0 auto;
 }
 
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+.price {
+	width: 50%;
+	font-size: 20px;
+	color: #cc0000;
+	float: left
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-.site_main_wrapper{
-    max-width: 90%;
+.price del {
+	color: #666666
 }
 
+.add-card {
+	width: 50%;
+}
+.btn-danger{
+	background: #EA2F3D
+}
 
-/*Product view*/ 
+.add-card button {
+	width: 100%;
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'roboto', 'droid';
+	background: #FF481F;
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+}
+
+@
+-webkit-keyframes spin { 0% {
+	-webkit-transform: rotate(0deg);
+}
+
+100%
+{
+-webkit-transform
+:
+ 
+rotate
+(360deg);
+ 
+}
+}
+@
+keyframes spin { 0% {
+	transform: rotate(0deg);
+}
+
+100%
+{
+transform
+:
+ 
+rotate
+(360deg);
+ 
+}
+}
+.site_main_wrapper {
+	max-width: 90%;
+}
+
+/*Product view*/
 .gallery-wrap .img-big-wrap img {
-    height: 450px;
-    width: auto;
-    display: inline-block;
-    cursor: zoom-in;
+	height: 450px;
+	width: auto;
+	display: inline-block;
+	cursor: zoom-in;
 }
-
 
 .gallery-wrap .img-small-wrap .item-gallery {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #ddd;
-    margin: 7px 2px;
-    display: inline-block;
-    overflow: hidden;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ddd;
+	margin: 7px 2px;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .gallery-wrap .img-small-wrap {
-    text-align: center;
+	text-align: center;
 }
+
 .gallery-wrap .img-small-wrap img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: zoom-in;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+	cursor: zoom-in;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+	/*Without this, clicking will make it sticky*/
+	pointer-events: none;
+}
+
+dd {
+	margin-bottom: 0rem;
+	margin-left: 0;
+	font-weight: bold;
 }

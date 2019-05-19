@@ -1,38 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This web.xml file is not required when using Servlet 3.0 container,
-     see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <servlet>
-        <servlet-name>Jersey Web Application</servlet-name>
-        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-        <init-param>
-            <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.marayaglobal</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/webapi/*</url-pattern>
-    </servlet-mapping>
-    
-    
-    <servlet>
-        <servlet-name>registration</servlet-name>
-        <jsp-file>/registration/registration.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>registration</servlet-name>
-        <url-pattern>/signup</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>product-registration</servlet-name>
-        <jsp-file>/registration/product-registration.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>product-registration</servlet-name>
-        <url-pattern>/registration</url-pattern>
-    </servlet-mapping>
-    
+<!-- This web.xml file is not required when using Servlet 3.0 container, 
+	see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>Jersey Web Application</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>com.marayaglobal</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jersey Web Application</servlet-name>
+		<url-pattern>/webapi/*</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<jsp-file>/registration/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>product-registration</servlet-name>
+		<jsp-file>/registration/product-registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>product-registration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>user-registration-check</servlet-name>
+		<jsp-file>/registration/user-registration-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user-registration-check</servlet-name>
+		<url-pattern>/signup/check</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>customer-home</servlet-name>
+		<jsp-file>/console/customer/Home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customer-home</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>admin-login</servlet-name>
+		<jsp-file>/console/admin/admin-login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-login</servlet-name>
+		<url-pattern>/admin-login</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>admin-login-test</servlet-name>
+		<jsp-file>/console/admin/admin-login-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-login-test</servlet-name>
+		<url-pattern>/admin-login-check</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>admin-console</servlet-name>
+		<jsp-file>/console/admin/admin.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-console</servlet-name>
+		<url-pattern>/admin-console</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>contact</servlet-name>
+		<jsp-file>/others/contact.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+
 </web-app>

@@ -56,4 +56,12 @@ label > [type='checkbox'],label > [type='label'] { margin-right: 0.5rem; }
 [type='file'], [type='checkbox'], [type='radio'] {margin: 0 0 1rem; }
 [type='checkbox'] + label, [type='radio'] + label {display: inline-block; margin-left: 0.5rem; margin-right: 1rem; margin-bottom: 0; vertical-align: baseline; } 
 
+.far, .fas {
+	color: #EA2F3D
+}
+
+.user-option-menu {
+	width: 200px
+}
+
 

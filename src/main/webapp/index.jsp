@@ -1,6 +1,17 @@
 <html>
     <head>
         <title>Maraya Global | Home</title>
+        
+<link rel="stylesheet" type="text/css" href="css/header/1.css">
+<link rel="stylesheet" type="text/css" href="css/header/2.css">
+<link rel="stylesheet" type="text/css" href="css/header/3.css">
+<link rel="stylesheet" type="text/css" href="css/header/4.css">
+<link rel="stylesheet" type="text/css" href="css/header/5.css">
+<link rel="stylesheet" type="text/css" href="css/header/7.css">
+<link rel="stylesheet" type="text/css" href="css/header/9.css">
+<link rel="stylesheet" type="text/css" href="css/header/8.css">
+<link rel="stylesheet" type="text/css" href="css/header/13.css">
+<link rel="stylesheet" type="text/css" href="css/header/14.css">
         <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap_1.css"> 
         <link rel="stylesheet" type="text/css" href="css/vendor/fontawesome-all.min.css"> 
 
@@ -13,7 +24,7 @@
 
 
 
-        <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script><![endif]
+        <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script>
         <script src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/scripts.js?"></script>
         <script type="text/javascript" src="https://global.awok.com/bitrix/js/main/core/core.js"></script>
         <meta name="msvalidate.01" content="FA70474D3B24F93B1C3F13C58690360C" />
@@ -25,7 +36,6 @@
 <script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'en','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'awok','SERVER_TZ_OFFSET':'14400','SITE_ID':'s5','USER_ID':'','SERVER_TIME':'1557322974','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'455ecd59a3137f2187662bcc7aa183f0'});</script>
 
 
-<script type="text/javascript" src="/bitrix/js/main/core/core.js?1520245444110032"></script>
 <script type="text/javascript">
 					(function () {
 						"use strict";
@@ -49,14 +59,7 @@
 								}
 							}
 
-							var request = new XMLHttpRequest();
-							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
-							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-							request.send(
-								"SITE_ID="+encodeURIComponent("s5")+
-								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
-								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
-							);
+													
 						};
 
 						if (window.frameRequestStart === true)
@@ -154,7 +157,7 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-
+        <%@include file="static-page/footer.html" %>
 
         <!--        <h2 class="btn ">Jersey RESTful Web Application!</h2>
                 <p><a href="webapi/myresource">Jersey resource</a>
@@ -165,9 +168,12 @@
         <script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
         <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
         <script type="text/javascript" src="js/service-request/product-service/home.js"></script>
+        <script src="js/service-request/product-service/nav-bar.js"></script>
         <script type="text/javascript" >
             
-
+$('button').click(function(){
+	alert('click')
+});
 
 
         </script>

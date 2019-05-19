@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author DELL
+ * @author Tirtho
  */
 public class DatabaseConnector {
 
@@ -82,6 +82,8 @@ public class DatabaseConnector {
             + "  PRIMARY KEY (`id`)"
             + ")";
 
+ 
+
     private DatabaseConnector() {
          
     }
@@ -105,7 +107,7 @@ public class DatabaseConnector {
             statement.executeUpdate(TABLE_CREATION_COMMAND_PRODUCT);
             statement.executeUpdate(TABLE_CREATION_COMMAND_ADDRESS);
             statement.executeUpdate(TABLE_CREATION_COMMAND_IMAGE);
-
+           
 //            
 
         } catch (ClassNotFoundException ex) {
