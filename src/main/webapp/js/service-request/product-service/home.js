@@ -70,11 +70,11 @@ $(function() {
 					var image = $(
 							"<img src='http://lorempixel.com/400/200/sports/"
 									+ Math.ceil(Math.random() * 10) + "'>")
-							.addClass('card-image p-3');
+							.addClass('card-image p-2');
 
 					var cardBody = $('<div></div>').addClass('card-body');
 					var cardTitle = $('<a target="_blank"></a>').addClass(
-							'card-title').attr('href',
+							'card-title text-center').attr('href',
 							'product-view.jsp?id=' + item.id);
 					var cardTextContainer = $('<div></div>')
 							.addClass(

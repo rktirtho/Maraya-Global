@@ -11,6 +11,7 @@
 <html>
 <head>
 <style type="text/css">
+
 </style>
 
 <%
@@ -3921,7 +3922,7 @@
 						} else {
 					%>
 					<div class="user_options_link drop_link cursor_pointer">
-						<span class="user_options_icon"></span> <span
+						<span class="user_options_icon"><i class="far fa-2x fa-user"></i></span> <span
 							class="user_options_info"> <em><a class="login"
 								href="/user/login/">Sign In</a> / <a class="register"
 								href="signup">Register</a></em> Welcome Guest
@@ -3961,7 +3962,7 @@
 									</span>
 								</div>
 								<div class="signin_button">
-									<button class="submit_form_input logint-btn">Sign In</button>
+									<button class="submit_form_input logint-btn p-2">Sign In</button>
 								</div>
 							</div>
 
@@ -4056,29 +4057,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="daily_deals_bg hot_deals_box">
-			<div
-				class="site_main_wrapper reset_background reset_padding clearFix">
-				<div class="dd-tabs-right">
-					<ul id="dd-top-tabs">
-
-						<!-- <li class="event_title active-tab"><a href="/"></a></li>
-						<li class=""><a class="tooltip" title="New"
-							href="/clearance/">Clearance</a></li> -->
-						<li class=""><a href="electronics">Electronics</a></li>
-						<li class=""><a href="mobility">Mobility</a></li>
-						<li class=""><a href="fashion">Fashion</a></li>
-						<li class=""><a href="best-sellers">Best Sellers</a></li>
-						<li class=""><a href="latest-deals">Latest Deals</a></li>
-						<li class=""><a href="gift-sets">Gift Sets</a></li>
-						<li class=""><a href="baby-care-and-toys">Baby Care & Toys</a></li>
-						<li class=""><a href="car-care">Car Care</a></li>
-						<li class=""><a href="special-offers">Special offers</a></li>
-						<li class=""><a href="renewed-gadgets">Renewed Gadgets</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		
 
 
 	</div>
