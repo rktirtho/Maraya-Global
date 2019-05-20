@@ -41,21 +41,24 @@ $(function() {
 			function() {
 				var userName = $('._sh_login_username').val();
 				var password = $('._sh_login_password').val();
-				$.get('http://localhost:8080/MarayaGlobal/webapi/user/login?email=ipsum@quis.com&password=5726', function(data) {
+				if(userName !="" && password !=null){}
+				$.get('http://localhost:8080/MarayaGlobal/webapi/user/login?email='+userName+'&password='+password, function(data) {
 					 location.reload();	
 					
 				}, 'json');
 				
-				$.ajax({
-					type : "POST",
-					url : 'http://localhost:8080/MarayaGlobal/webapi/user/login?email=ipsum@quis.com&password=5726',
-					cache : false,
-					success : function(data) {
+				//$.ajax({
+					//type : "POST",
+					//url : 'http://localhost:8080/MarayaGlobal/webapi/user/login?email=ipsum@quis.com&password=5726',
+					//cache : false,
+					//success : function(data) {
 						console.log(data)
-					}
+				//	}
 
-				});
+				//});
 			});
+	
+	
 
 	function showData(data) {
 		data
@@ -88,9 +91,27 @@ $(function() {
 							"Tk " + item.unitPrice);
 
 					var buttonContainer = $('<div></div>').addClass('add-card');
-					var cardButton = $('<button></button>').addClass(
-							'btn btn-danger btn-add-cart rounded-0 add-cart')
-							.html('ADD TO CART');
+					var cardButton = $('<button value="'+item.id+'" id="product'+item.id+'"></button>').addClass(
+							'btn btn-danger add-to-cart rounded-0')
+							.html('ADD TO CART').click(function(){
+								var itemId= $(this).val()
+								$.ajax({
+									type : "GET",
+									url : "webapi/cart/add?id=" + itemId,
+									cache : false,
+									success : function(data) {
+										
+										if (data == -1) {
+											alert('You Have to login first')
+										} else if(data == 1){
+											alert('added to your cart');
+											$('.btn-add-cart').prop("disabled",true);
+										}else{
+											
+										}
+									}
+								});
+							});
 
 					if (item.discount > 0) {
 						priceContainer

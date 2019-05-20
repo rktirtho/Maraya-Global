@@ -4,14 +4,13 @@
     Author     : DELL
 --%>
 
+<%@page import="com.marayaglobal.util.Basic"%>
 <%@page import="com.marayaglobal.beans.user.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
 <style type="text/css">
-
-
 </style>
 
 <%
@@ -31,55 +30,10 @@
 	content="Online shopping in Bangladesh, online shopping BD, Bangladesh online shopping, BD best deals, Deals in BD Daily Deals, Deal of the day, Best Deals" />
 <meta name="description"
 	content="Get the best deals and offers with No.1 Online Shopping in BD Bangladesh, Buy the latest daily deals in BD, deal of the day, mobiles, tablets, laptops and home appliances at low prices and enjoy online shopping with cash on delivery and free deivery* across the Bangladesh." />
-
+<link rel="icon" href="images/util/fav.png" type="image/gif"
+	sizes="16x16">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script type="text/javascript">
-	if (!window.BX)
-		window.BX = {
-			message : function(mess) {
-				if (typeof mess == 'object')
-					for ( var i in mess)
-						BX.message[i] = mess[i];
-				return true;
-			}
-		};
-</script>
-<script type="text/javascript">
-	(window.BX || top.BX).message({
-		'JS_CORE_LOADING' : 'Loading...',
-		'JS_CORE_WINDOW_CLOSE' : 'Close',
-		'JS_CORE_WINDOW_EXPAND' : 'Expand',
-		'JS_CORE_WINDOW_NARROW' : 'Restore',
-		'JS_CORE_WINDOW_SAVE' : 'Save',
-		'JS_CORE_WINDOW_CANCEL' : 'Cancel',
-		'JS_CORE_H' : 'h',
-		'JS_CORE_M' : 'm',
-		'JS_CORE_S' : 's',
-		'JS_CORE_NO_DATA' : '- No data -',
-		'JSADM_AI_HIDE_EXTRA' : 'Hide extra items',
-		'JSADM_AI_ALL_NOTIF' : 'All notifications',
-		'JSADM_AUTH_REQ' : 'Authentication is required!',
-		'JS_CORE_WINDOW_AUTH' : 'Log In',
-		'JS_CORE_IMAGE_FULL' : 'Full size'
-	});
-</script>
-<script type="text/javascript">
-	(window.BX || top.BX).message({
-		'LANGUAGE_ID' : 'en',
-		'FORMAT_DATE' : 'DD.MM.YYYY',
-		'FORMAT_DATETIME' : 'DD.MM.YYYY HH:MI:SS',
-		'COOKIE_PREFIX' : 'awok',
-		'SERVER_TZ_OFFSET' : '14400',
-		'SITE_ID' : 's5',
-		'USER_ID' : '',
-		'SERVER_TIME' : '1557308439',
-		'USER_TZ_OFFSET' : '0',
-		'USER_TZ_AUTO' : 'Y',
-		'bitrix_sessid' : '455ecd59a3137f2187662bcc7aa183f0'
-	});
-</script>
 
 
 
@@ -94,75 +48,13 @@
 	content="0KsfOXHtHT5IK3f1y5LZznnQ3Mkqy_aijkvKbidBA8Y" />
 <link href="https://www.google.com/+AlifcaUAE/" rel="publisher" />
 <meta name="msvalidate.01" content="DF53B2ACE7B57BF60A098FBDC753A3D0" />
-<script type="text/javascript">
-	if (!window.BX)
-		window.BX = {
-			message : function(mess) {
-				if (typeof mess == 'object')
-					for ( var i in mess)
-						BX.message[i] = mess[i];
-				return true;
-			}
-		};
-</script>
-<script type="text/javascript">
-	(window.BX || top.BX).message({
-		'JS_CORE_LOADING' : 'Loading...',
-		'JS_CORE_WINDOW_CLOSE' : 'Close',
-		'JS_CORE_WINDOW_EXPAND' : 'Expand',
-		'JS_CORE_WINDOW_NARROW' : 'Restore',
-		'JS_CORE_WINDOW_SAVE' : 'Save',
-		'JS_CORE_WINDOW_CANCEL' : 'Cancel',
-		'JS_CORE_H' : 'h',
-		'JS_CORE_M' : 'm',
-		'JS_CORE_S' : 's',
-		'JS_CORE_NO_DATA' : '- No data -',
-		'JSADM_AI_HIDE_EXTRA' : 'Hide extra items',
-		'JSADM_AI_ALL_NOTIF' : 'All notifications',
-		'JSADM_AUTH_REQ' : 'Authentication is required!',
-		'JS_CORE_WINDOW_AUTH' : 'Log In',
-		'JS_CORE_IMAGE_FULL' : 'Full size'
-	});
-</script>
 
 
 
-<script type="text/javascript"
-	src="/bitrix/js/main/core/core.js?1520245444110032"></script>
-<script type="text/javascript">
-	(function() {
-		"use strict";
 
-		var counter = function() {
-			var cookie = (function(name) {
-				var parts = ("; " + document.cookie).split("; " + name + "=");
-				if (parts.length == 2) {
-					try {
-						return JSON.parse(decodeURIComponent(parts.pop().split(
-								";").shift()));
-					} catch (e) {
-					}
-				}
-			})("BITRIX_CONVERSION_CONTEXT_s5");
 
-			if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME")
-					&& cookie.UNIQUE && cookie.UNIQUE.length > 0) {
-				for (var i = 0; i < cookie.UNIQUE.length; i++) {
-					if (cookie.UNIQUE[i] == "conversion_visit_day")
-						return;
-				}
-			}
+<script type="text/javascript" src="js/vendor/cp/core.js"></script>
 
-		};
-
-		if (window.frameRequestStart === true)
-			BX.addCustomEvent("onFrameDataReceived", counter);
-		else
-			BX.ready(counter);
-	})();
-</script>
-<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/bitrix/templates/awok-lang/css/style-ie8.css" /><![endif]-->
-<!--[if (gte IE 9) | (!IE)]><!-->
 <script
 	src="https://s5d.awokcdn.com/bitrix/templates/awok-lang/js/jquery.js?"></script>
 <!--<![endif]-->
@@ -3937,11 +3829,12 @@
 				</div>
 				<!-- awok-online-shopping-logo.png -->
 				<div class="site_logo">
-					<a href="/"><img src="images/util/logo.png" alt="Maraya Global" /></a>
+					<a href="<%=Basic.DOMAIN_NAME%>"><img style="height: 100%;"
+						src="images/util/logo.png" alt="Maraya Global" /></a>
 				</div>
 				<div class="site_search">
 					<div class="header_isearch">
-						<form action="/search/" class="clearFix">
+						<form action="search" class="clearFix">
 							<input name="q" id="awok_instant_search" type="text" value=""
 								placeholder="I am looking for ..." maxlength="50"
 								autocomplete="off" /> <input id="submit_isearch" type="submit"
@@ -4112,13 +4005,7 @@
 						</a></li>
 					</ul>
 				</div>
-				<div class="lang_toggle home">
-					<span class="lang_toggle_text"> <a
-						href="/?alang=ar&redirect=ae&ship=BD" class="lang_toggle_ar"><span
-							class="lang_toggle_flag"><img
-								src="/bitrix/templates/awok-lang/images/uae_flag.png" alt="" /></span>العربية</a>
-					</span>
-				</div>
+
 				<div class="top_links_right">
 					<a href="">marayaglobal.com</a>
 				</div>
@@ -4175,19 +4062,19 @@
 				<div class="dd-tabs-right">
 					<ul id="dd-top-tabs">
 
-						<li class="event_title active-tab"><a href="/"></a></li>
+						<!-- <li class="event_title active-tab"><a href="/"></a></li>
 						<li class=""><a class="tooltip" title="New"
-							href="/clearance/">Clearance</a></li>
-						<li class=""><a href="/electronics/">Electronics</a></li>
-						<li class=""><a href="/mobility/">Mobility</a></li>
-						<li class=""><a href="/fashion/">Fashion</a></li>
-						<li class=""><a href="/best-sellers/">Best Sellers</a></li>
-						<li class=""><a href="/deals/latest/">Latest Deals</a></li>
-						<li class=""><a href="/gift-sets/">Gift Sets</a></li>
-						<li class=""><a href="/toys/">Baby Care & Toys</a></li>
-						<li class=""><a href="/car-care/">Car Care</a></li>
-						<li class=""><a href="/offers/">Special offers</a></li>
-						<li class=""><a href="/renewed-gadgets/">Renewed Gadgets</a></li>
+							href="/clearance/">Clearance</a></li> -->
+						<li class=""><a href="electronics">Electronics</a></li>
+						<li class=""><a href="mobility">Mobility</a></li>
+						<li class=""><a href="fashion">Fashion</a></li>
+						<li class=""><a href="best-sellers">Best Sellers</a></li>
+						<li class=""><a href="latest-deals">Latest Deals</a></li>
+						<li class=""><a href="gift-sets">Gift Sets</a></li>
+						<li class=""><a href="baby-care-and-toys">Baby Care & Toys</a></li>
+						<li class=""><a href="car-care">Car Care</a></li>
+						<li class=""><a href="special-offers">Special offers</a></li>
+						<li class=""><a href="renewed-gadgets">Renewed Gadgets</a></li>
 					</ul>
 				</div>
 			</div>
@@ -4200,17 +4087,16 @@
 	<script type="text/javascript"
 		src="../js/service-request/product-service/nav-bar.js"></script>
 	<script>
-	
 		$('.logout').click(function() {
 			$.ajax({
 				type : "POST",
 				url : 'webapi/user/logout',
 				cache : false,
 				success : function(data) {
-					 location.reload();	
+					location.reload();
 				}
 			});
-			
+
 		});
 	</script>
 

@@ -255,7 +255,7 @@
 						<li id="our_product"><a href="#our-product"><i class="fa fa-pie-chart"></i> <span
 								class="nav-label">Our Product</span> </a></li>
 								
-						<li id="add_new_product"><a href="#add-new-product"><i
+						<li id="add_new_product"><a href="product-registration" target="_blank"><i
 								class="fa fa-files-o"></i> <span class="nav-label">Add
 									New Product</span></a></li>
 									
@@ -353,14 +353,7 @@
 				});
 			});
 
-			$("#add_new_product").click(function() {
-				$.ajax({
-					url : "ajax/admin/product-registration.jsp",
-					success : function(result) {
-						$(".data-container").html(result);
-					}
-				});
-			});
+			
 			
 			$("#vendor_product").click(function() {
 				$.ajax({

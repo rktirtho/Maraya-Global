@@ -135,7 +135,7 @@
 
         </div>
         <div class="loader">
-            <div class="spinner-grow text-primary" role="status">
+            <div class="spinner-grow text-primary " role="status">
                 <span class="sr-only">Loading...</span>
             </div>
             <div class="spinner-grow text-secondary" role="status">
@@ -168,12 +168,9 @@
         <script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
         <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
         <script type="text/javascript" src="js/service-request/product-service/home.js"></script>
-        <script src="js/service-request/product-service/nav-bar.js"></script>
+        
         <script type="text/javascript" >
-            
-$('button').click(function(){
-	alert('click')
-});
+
 
 
         </script>

@@ -24,7 +24,8 @@
 
 <head>
 
-<title>Maraya Global | <c:out value="${u.getTitle()}"></c:out> </title>
+<title>Maraya Global | <c:out value="${u.getTitle()}"></c:out>
+</title>
 <link rel="stylesheet" type="text/css" href="css/header/2.css">
 <link rel="stylesheet" type="text/css" href="css/header/8.css">
 <link rel="stylesheet" type="text/css" href="css/header/13.css">
@@ -63,15 +64,18 @@
 	border-radius: 4px;
 	cursor: zoom-in;
 }
-.fas{
-color: #fff
+
+.fas {
+	color: #fff
 }
 
-.btn-add-cart{
-width: 65%;
-color: #fff;
-background: #EA2F3D
+.btn-add-cart {
+	width: 65%;
+	color: #fff;
+	background: #EA2F3D
 }
+
+
 </style>
 
 
@@ -157,8 +161,9 @@ background: #EA2F3D
 					</dl>
 
 					<hr>
-					 <a class="btn btn-lg btn-danger btn-add-cart text-white text-uppercase px-5"> <i
-						class="fas fa-shopping-cart"></i> Add to cart
+					<a
+						class="btn btn-lg btn-danger btn-add-cart text-white text-uppercase px-5">
+						<i class="fas fa-shopping-cart"></i> Add to cart
 					</a>
 				</article>
 				<!-- card-body.// -->
@@ -356,7 +361,7 @@ background: #EA2F3D
 			<div class="tab-pane fade" id="comment" role="tabpanel"
 				aria-labelledby="contact-tab">
 				<div class="py-3 comment-area"></div>
-				
+
 			</div>
 		</div>
 	</div>
@@ -370,6 +375,59 @@ background: #EA2F3D
 						<h2 class="card-title">Product Name</h2>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- The Modal -->
+	<div class="modal fade" id="Mymodal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<center>
+						<span class="modal-title">Login form</span>
+					</center>
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p class="text-intro">Lorem ipsum dolor sit amet, consectetur
+						adipisicing elit. Minima maxime quam architecto quo inventore
+						harum ex magni, dicta impedit.</p>
+					<div class="form-div">
+						<form action="/action_page.php">
+							<div class="form-group">
+								<input type="email" class="form-control" id="email"
+									placeholder="Registered E-Mail ID">
+							</div>
+							<div class="form-group">
+
+								<input type="password" class="form-control" id="pwd"
+									placeholder="Password">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label"> <input
+									class="form-check-input" type="checkbox"> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+							<center>
+								<a href="#" title="Reset Password"><small>Forgot
+										Password ?</small></a>
+							</center>
+							<button type="submit" class="btn btn-primary btn-block mybtn">Login
+								with facebook</button>
+							<button type="submit" class="btn btn-danger btn-block mybtn">Login
+								with Google-Plus</button>
+						</form>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -390,11 +448,31 @@ background: #EA2F3D
 				source_image_height : 1200,
 				show_hint : true,
 			});
-			
-			
-			$('.btn-add-cart').click(function(){
-				alert('Thsi f');
+
+			$('.btn-add-cart').click(function() {
+				var id =
+	<%=id%>
+		;
+				$.ajax({
+					type : "GET",
+					url : "webapi/cart/add?id=" + id,
+					cache : false,
+					success : function(data) {
+						
+						if (data == -1) {
+							alert('You have to login first')
+							//$('#Mymodal').modal('show');
+						} else if(data == 1){
+							alert('added to your cart');
+							$('.btn-add-cart').prop("disabled",true);
+						}else{
+							
+						}
+					}
+				});
 			});
+
+			
 
 		});
 	</script>

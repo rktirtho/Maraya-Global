@@ -27,7 +27,7 @@ import org.apache.jasper.tagplugins.jstl.core.If;
  * @author DELL
  */
 @Path("user")
-//@Produces(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class Login {
 
@@ -52,6 +52,7 @@ public class Login {
 	@Path("/logout")
 	public void logout(@Context HttpServletRequest request) {
 		HttpSession session= request.getSession();
+		CustomerDBHelper.logout(session.getId());
 		session.setAttribute("currentUser", null);
 	}
 

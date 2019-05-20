@@ -22,47 +22,41 @@ public class CartDBHelper {
 
 
 	public static void main(String[] args) {
-		List<CartView> cartViews = getCartByCustomerId(1);
-
-		for (CartView cartView : cartViews) {
-			System.out.println(cartView.getTitle());
-		}
+		System.out.println(create(4, 1));
 	}
 
-//    public static int create(Cart cart) {
-//        int status =0;
-//
-//        connection = dbConnector.getConnection();
-//        try {
-//            statement = connection.prepareCall("INSERT INTO "
-//                    + TABLE_NAME + "("
-//                    + ID + COMMA
-//                    + CUSTOMER_ID + COMMA
-//                    + PRODUCT_ID + COMMA
-//                    + QUANTITY
-//                    + ") values(?,?,?,?)");
-//            statement.setInt(1, cart.getId());
-//            statement.setInt(2, cart.getCustomerId());
-//            statement.setInt(3, cart.getProductId());
-//            statement.setInt(4, 1);
-//            status = statement.executeUpdate();
-//
-//        } catch (SQLException ex) {
-//            Logger.getLogger(CustomerDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-//        }finally {
-//            try {
-//                if (connection!=null) {
-//                    connection.close();
-//                }
-//                if (statement!=null) {
-//                    statement.close();
-//                }
-//            } catch (SQLException ex) {
-//                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
-//            }
-//        } 
-//        return status;
-//    }
+    public static int create(int id, int cId) {
+        int status =0;
+
+        connection = dbConnector.getConnection();
+        try {
+            statement = connection.prepareCall("INSERT INTO "
+                    + OrderDBHelper.TABLE_NAME + "("
+                    + OrderDBHelper.PRODUCTID +  OrderDBHelper.COMMA
+                    + OrderDBHelper.CUSTOMER_ID +  OrderDBHelper.COMMA
+                    + OrderDBHelper.QUANTITY
+                    + ") values(?,?,?)");
+            statement.setInt(1, id);
+            statement.setInt(2, cId);
+            statement.setInt(3, 1);
+            status = statement.executeUpdate();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+        }finally {
+            try {
+                if (connection!=null) {
+                    connection.close();
+                }
+                if (statement!=null) {
+                    statement.close();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } 
+        return status;
+    }
 
 //    public int update(int id, int quantity) {
 //    	int status =0;

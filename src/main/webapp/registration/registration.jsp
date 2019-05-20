@@ -3,12 +3,14 @@
     Created on : May 9, 2019, 10:59:49 AM
     Author     : DELL
 --%>
+<%
 
+%>
 <%@page import="com.marayaglobal.beans.user.Customer"%>
 <%@page import="com.marayaglobal.dao.CustomerDBHelper"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>  
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +31,7 @@
 
 </head>
 <body>
- <%@include file="../static-page/nav-bar.jsp" %>
+	<%@include file="../static-page/nav-bar.jsp"%>
 
 	<div class="container my-5">
 		<div class="row justify-content-center">
@@ -108,18 +110,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="accType"
-									id="inlineRadio2" checked required value="customer"> <label
-									class="form-check-label" for="inlineRadio2">I'm
-									Customer</label>
-							</div>
 
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="accType"
-									id="inlineRadio1" required value="vendor"> <label
-									class="form-check-label" for="inlineRadio1">I'm Vendor</label>
-							</div>
 
 							<div class="custom-control custom-checkbox py-3">
 								<input type="checkbox" class="custom-control-input"
@@ -137,7 +128,10 @@
 									class="custom-control-label" for="customCheck1">I would
 									like to receive promotional offers from Maraya Global</label>
 							</div>
-
+							<div class="login-register">
+								<label class="err-msg"
+									id="current"> </label>
+							</div>
 
 							<div class="form-group mt-3">
 								<button id="signup"
@@ -145,7 +139,7 @@
 									disabled="disabled">Sign Up</button>
 							</div>
 							<div class="login-register">
-								<a href="/marayaglobal" id="current">Login</a>
+								<a href="/marayaglobal">Login</a>
 							</div>
 						</div>
 					</div>
@@ -154,12 +148,12 @@
 
 			</div>
 		</div>
-		
-		
 
-		
-		
-		
+
+
+
+
+
 	</div>
 	<script type="text/javascript" src="js/vendor/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
@@ -168,32 +162,35 @@
 		src="js/service-request/product-service/home.js"></script>
 	<script>
 		$(document).ready(
+
 				function() {
 					var name;
 					var email;
 					var phoneNumber;
 					var password;
-					var accType;
+					var confirm;
 
-					$('#resistrationForm input')
-							.keyup(
-									function() {
-										name = $('#name').val();
-										email = $('#email').val();
-										phoneNumber = $('#phoneNumber').val();
-										password = $('#password').val();
-										accType = $('#accType').val();
-										console.log(name);
-										console.log(email);
-										console.log(phoneNumber);
-										console.log(password);
-										if (name != "" && email != ""
-												&& phoneNumber != ""
-												&& password != "") {
+					$('#resistrationForm input').keyup(
+							function() {
+								name = $('#name').val();
+								email = $('#email').val();
+								phoneNumber = $('#phoneNumber').val();
+								password = $('#password').val();
+								confirm = $('#confirm').val;
+								console.log(name);
+								console.log(email);
+								console.log(phoneNumber);
+								console.log(password);
+								if (name != "" && email != ""
+										&& phoneNumber != "" && password != ""
+										&& confirm != "") {
+									if (password == confirm) {
 
-											$('#signup').removeAttr('disabled')
-										}
-									});
+									}
+
+									$('#signup').removeAttr('disabled')
+								}
+							});
 
 					var allowsubmit = false;
 					$(function() {
@@ -208,6 +205,7 @@
 								//if both are same remove the error and allow to submit
 								$('.error').text('');
 								allowsubmit = true;
+
 							} else {
 								//if not matching show error and not allow to submit
 								$('.error').text('Password not matching');
@@ -242,8 +240,7 @@
 							name : name,
 							email : email,
 							phoneNumber : phoneNumber,
-							password : password,
-							accType : accType
+							password : password
 						}, function(data) {
 							if (data == "0") {
 								colsole.log('failed')

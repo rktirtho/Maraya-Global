@@ -39,8 +39,8 @@ public class CustomerDBHelper {
 	static ResultSet rs = null;
 
 	public static void main(String[] args) {
-		System.out.println(getBySession("9DD45D90782117D97688C07E54B1BED3").getName());
-		;
+		System.out.println(logout("dfdshfjsdhfyh5435f"));
+		
 
 	}
 
@@ -55,8 +55,8 @@ public class CustomerDBHelper {
 	 *         </ul>
 	 */
 	public static int create(Customer customer) {
-		int status = isUserExist(customer.getEmail());
-
+		int status = logout("dfdshfjsdhfyh5435f");
+System.out.println(status);
 		if (status > 0) {
 
 			return status;
@@ -248,14 +248,49 @@ public class CustomerDBHelper {
 		} catch (SQLException ex) {
 		} finally {
 			try {
-				connection.close();
-				statement.close();
-				rs.close();
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (rs != null) {
+					rs.close();
+				}
 			} catch (SQLException ex) {
 				System.out.println(ex.getMessage());
 			}
 		}
 		return customer;
+	}
+
+	public static int logout(String sessionId) {
+		Customer customer = getBySession(sessionId);
+		connection = dbConnector.getConnection();
+		int status = 0;
+		try {
+			statement = connection.prepareCall(
+					"UPDATE " + TABLE_NAME + " SET " + SESSION + " = null WHERE id= "+customer.getId());
+			status = statement.executeUpdate();
+
+		} catch (SQLException ex) {
+			System.out.println(ex.getMessage());
+		} finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (rs != null) {
+					rs.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex.getMessage());
+			}
+		}
+		return status;
 	}
 
 	private static void inputer(ResultSet rs, Customer customer) throws SQLException {

@@ -13,13 +13,22 @@
 <body>
 
 
-<h4>
+<label>
 <%
 int status = CustomerDBHelper.create(user);
-out.print(status);
+if(status == 0){
+	out.print("Something went wrong. Try Again");
+}else if(status==1){
+	response.sendRedirect("account-confirmtion.jsp");
+}else{
+	out.print("User Already Exixts");
+}
+
+
+
 %>
 
-</h4>
+</label>
 
 </body>
 </html>
