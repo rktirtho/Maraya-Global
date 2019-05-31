@@ -56,8 +56,8 @@ span {
 					<span>Address: </span>${u.getShippingArea()}<br>
 					<span>City: </span>${u.getShippingCity()} - ${u.getShippingPostCode()}<br>
 					</td>
-					<td>${u.getQuantity()}</td>
 					<td>${u.getPrice()}</td>
+					<td>${u.getQuantity()}</td>
 					<td>${u.getPrice()* u.getQuantity()}</td>
 					<td>${u.getTimestamp()}</td>
 

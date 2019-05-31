@@ -24,7 +24,7 @@ public class AdminDBHelper {
 	static ResultSet rs = null;
 
 	public static void main(String[] args) {
-System.out.println(login("ipsum.leo@MaurisnullaInteger.edu", "067731455", "hdfhjsadfhsdhfsdjhfsdhfjsnfakjr0887dkjfsdf"));
+System.out.println(login("demo", "root", "hdfhjsadfhsdhfsdjhfsdhfjsnfakjr0887dkjfsdf"));
 
 	}
 	
@@ -60,6 +60,38 @@ System.out.println(login("ipsum.leo@MaurisnullaInteger.edu", "067731455", "hdfhj
 		return name;
 	}
 	
+	public static int getAdminIdBySessionId(String sessinId) {
+		int id = 0;
+		connection = dbConnector.getConnection();
+		
+		try {
+			String command = "select id from " + TABLE_NAME + " where " + SESSION + "=? ";
+			statement = connection.prepareStatement(command);
+
+			statement.setString(1, sessinId);
+//			statement.setBoolean(3, true);
+			rs = statement.executeQuery();
+
+			if (rs.next()) {
+				id = rs.getInt(1);
+				
+			}
+
+		} catch (SQLException ex) {
+			System.out.println(ex.getMessage());
+
+		} finally {
+			try {
+				connection.close();
+				statement.close();
+				rs.close();
+			} catch (SQLException ex) {
+				System.out.println(ex.getMessage());
+			}
+		}
+		return id;
+	}
+	
 
 	public static boolean login(String email, String password, String session) {
 		boolean status = false;
@@ -90,6 +122,35 @@ System.out.println(login("ipsum.leo@MaurisnullaInteger.edu", "067731455", "hdfhj
 				connection.close();
 				statement.close();
 				rs.close();
+			} catch (SQLException ex) {
+				System.out.println(ex.getMessage());
+			}
+		}
+		return status;
+	}
+	
+	public static int logout(String sessionId) {
+		int  id = getAdminIdBySessionId(sessionId);
+		connection = dbConnector.getConnection();
+		int status = 0;
+		try {
+			statement = connection.prepareCall(
+					"UPDATE " + TABLE_NAME + " SET " + SESSION + " = null WHERE id= "+id);
+			status = statement.executeUpdate();
+
+		} catch (SQLException ex) {
+			System.out.println(ex.getMessage());
+		} finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (rs != null) {
+					rs.close();
+				}
 			} catch (SQLException ex) {
 				System.out.println(ex.getMessage());
 			}

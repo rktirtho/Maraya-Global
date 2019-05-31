@@ -6,7 +6,7 @@
 <%
 	String name = AdminDBHelper.adminName(session.getId());
 	if (name == null)
-		response.sendRedirect("signup");
+		response.sendRedirect(request.getContextPath());
 %>
 <html>
 <head>
@@ -22,15 +22,16 @@
 </head>
 <body>
 	<div class="container">
-		<form class="border border-light p-5" action="product-registration-check"
-			method="post">
+		<form class="border border-light p-5" action="ProductRegistrationCheck" 
+			method="post" enctype="multipart/form-data">
 
 			<p class="h4 mb-4 text-center">Add New Product</p>
 
 
-
+<fieldset>
+<legend>Basic Information</legend>
 			<div class="form-group">
-				<label for="title">Title*</label> <input type="text"
+				<label for="title">Title*</label> <input type="text" required
 					class="form-control" id="title" name="title" aria-describedby="emailHelp"
 					placeholder="Product Title">
 				<!-- <small id="emailHelp"
@@ -39,17 +40,18 @@
 			</div>
 
 			<!-- ===============================================Category, Brand, Model================================= -->
+			
 			<div class="form-row mb-4">
 				<div class="col">
 					<div class="form-group">
-						<label for="category">Category*</label> <input type="text"
+						<label for="category">Category*</label> <input type="text" required
 							class="form-control" id="category"  name="category" aria-describedby="emailHelp"
 							placeholder="Category">
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
-						<label for="brand">Brand*</label> <input type="text"
+						<label for="brand">Brand*</label> <input type="text" required
 							class="form-control" id="brand"  name="brand" aria-describedby="emailHelp"
 							placeholder="brand">
 					</div>
@@ -57,33 +59,38 @@
 
 				<div class="col">
 					<div class="form-group">
-						<label for="model">Model*</label> <input type="text"
+						<label for="model">Model*</label> <input type="text" required
 							class="form-control" id="model" name="model" aria-describedby="emailHelp"
 							placeholder="model">
 					</div>
 				</div>
 
 			</div>
-
+</fieldset>
+<fieldset>
+<legend>Pricing</legend>
 			<!-- ===============================================Category, Brand, Model================================= -->
 
 			<div class="form-row mb-4">
 				<div class="col">
 					<div class="form-group">
-						<label for="regular_price">Regular Price*</label> <input
-							type="text" class="form-control" id="regular_price"
+						<label for="regular_price">Regular Price*</label> <input 
+							type="text" class="form-control" id="regular_price" required
 							name="regularprice" aria-describedby="emailHelp" placeholder="regular price">
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
-						<label for="discount">Discount%*</label> <input type="text"
+						<label for="discount">Discount%*</label> <input type="text" required
 							class="form-control" id="discount" name="discount" aria-describedby="emailHelp"
 							placeholder="discount">
 					</div>
 				</div>
 
 			</div>
+</fieldset>
+<fieldset>
+<legend>Storage and Memory</legend>
 
 			<!-- ===============================================RAM and Storage================================= -->
 			<div class="form-row mb-4">
@@ -111,7 +118,35 @@
 				</div>
 
 			</div>
+			<div class="form-row mb-4">
+				<div class="col">
+					<div class="form-group">
+						<label for="processor">Cache Memory</label> <input type="text"
+							class="form-control" id="processor" name="touch" aria-describedby="emailHelp"
+							placeholder="Category">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="generation">Graphics Chipset</label> <input
+							type="text" class="form-control" id="generation"
+							name="graphicsChipset" aria-describedby="emailHelp" placeholder="generation">
+					</div>
+				</div>
 
+				<div class="col">
+					<div class="form-group">
+						<label for="clock_speed">Graphics Memory</label> <input
+							type="text" class="form-control" id="clock_speed"
+							name="graphicsMemory" aria-describedby="emailHelp" placeholder="clock speed">
+					</div>
+				</div>
+
+			</div>
+
+</fieldset>
+<fieldset>
+<legend>Processing and Display</legend>
 
 			<!-- ===============================================processor, generation, clock speed================================= -->
 			<div class="form-row mb-4">
@@ -178,33 +213,11 @@
 
 			</div>
 
-
+</fieldset>
+<fieldset>
+<legend>Network and Ports</legend>
 			<!-- ===============================================processor, generation, clock speed================================= -->
-			<div class="form-row mb-4">
-				<div class="col">
-					<div class="form-group">
-						<label for="processor">Cache Memory</label> <input type="text"
-							class="form-control" id="processor" name="touch" aria-describedby="emailHelp"
-							placeholder="Category">
-					</div>
-				</div>
-				<div class="col">
-					<div class="form-group">
-						<label for="generation">Graphics Chipset</label> <input
-							type="text" class="form-control" id="generation"
-							name="graphicsChipset" aria-describedby="emailHelp" placeholder="generation">
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="form-group">
-						<label for="clock_speed">Graphics Memory</label> <input
-							type="text" class="form-control" id="clock_speed"
-							name="graphicsMemory" aria-describedby="emailHelp" placeholder="clock speed">
-					</div>
-				</div>
-
-			</div>
+			
 			<!-- ===============================================Network================================= -->
 			<div class="form-row mb-4">
 				<div class="col">
@@ -243,8 +256,9 @@
 				</div>
 
 			</div>
-
-
+</fieldset>
+<fieldset>
+<legend>Others</legend> 
 			<!-- ===============================================External Cheractaristic================================= -->
 
 			<div class="form-row mb-4">
@@ -301,12 +315,13 @@
 				</div>
 
 			</div>
+			</fieldset>
 			<!-- ===============================================Description================================= -->
 
 			<div class="form-row mb-4">
 				<div class="col">
 					<div class="form-group">
-						<label for="processor">Operating System</label>
+						<label for="processor">Description</label>
 						<textarea rows="7" class="form-control" id="processor"
 							placeholder="Category" name="description"> </textarea>
 					</div>
@@ -321,9 +336,12 @@
 			<div class="form-row mb-4">
 				<div class="col">
 					<div class="form-group">
-						<label for="processor">Operating System</label> <input type="file"
+						<label for="processor">Primary Image</label> <input type="file"
 							class="form-control" id="processor" name="primaryImage" aria-describedby="emailHelp"
 							placeholder="Category">
+							 <small id="emailHelp"
+				class="form-text text-muted text-warning">Use 400*400 pixel image under 40 KB. To optimized image 
+				<a href="https://tinypng.com/">Click Here</a></small> 
 					</div>
 				</div>
 			</div>

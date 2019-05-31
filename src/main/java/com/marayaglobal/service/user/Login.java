@@ -37,8 +37,13 @@ public class Login {
 			@Context HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		Customer customer =  CustomerDBHelper.login(email, password, session.getId());
-		session.setAttribute("currentUser", customer);
-		return customer;
+		if (customer !=null) {
+			session.setAttribute("currentUser", customer);
+			return customer;
+		}else {
+			return null;
+		}
+		
 	}
 
 	@POST
@@ -56,4 +61,5 @@ public class Login {
 		session.setAttribute("currentUser", null);
 	}
 
+	
 }

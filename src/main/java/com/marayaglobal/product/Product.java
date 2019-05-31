@@ -159,6 +159,10 @@ public class Product {
     public void setImages(List<String> images) {
         this.images = images;
     }
+    
+    public int getCurrentPrice() {
+    	return (int) (unitPrice - (unitPrice*discount)/100);
+    }
 
     @Override
     public String toString() {

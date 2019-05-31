@@ -22,10 +22,10 @@
 
 					<form class="md-form" style="color: #757575;" action="admin-login-check" method="POST">
 						<label for="materialLoginFormEmail">E-mail</label> <input
-							type="email" name="email" id="materialLoginFormEmail" class="form-control">
+							type="email" name="email" value="admin@marayaglobal.com" id="materialLoginFormEmail" class="form-control">
 
 						<label for="materialLoginFormPassword">Password</label> <input
-							type="password" name="password" id="materialLoginFormPassword"
+							type="password" name="password" value="root" id="materialLoginFormPassword"
 							class="form-control">
 
 

@@ -13,7 +13,7 @@
 	if (name == null)
 		response.sendRedirect("signup");
 	
-	List<Vendor> vendors = VendorDBHelper.getall();
+	List<Vendor> vendors = VendorDBHelper.getVerifiedVendor();
 	request.setAttribute("vendors", vendors);
 %>
 
@@ -28,7 +28,6 @@
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Phone Number</th>
-      <th scope="col">Active</th>
     </tr>
   </thead>
   <tbody>

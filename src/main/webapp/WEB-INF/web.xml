@@ -1,121 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This web.xml file is not required when using Servlet 3.0 container, 
 	see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <servlet>
-        <servlet-name>Jersey Web Application</servlet-name>
-        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-        <init-param>
-            <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.marayaglobal</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet>
-        <servlet-name>ProductRegistrationCheck</servlet-name>
-        <servlet-class>ProductRegistrationCheck</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/webapi/*</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>registration</servlet-name>
-        <jsp-file>/registration/registration.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>registration</servlet-name>
-        <url-pattern>/signup</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>product-registration</servlet-name>
-        <jsp-file>/registration/product-registration.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>product-registration</servlet-name>
-        <url-pattern>/registration</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>user-registration-check</servlet-name>
-        <jsp-file>/registration/user-registration-check.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>user-registration-check</servlet-name>
-        <url-pattern>/signup/check</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>customer-home</servlet-name>
-        <jsp-file>/console/customer/Home.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>customer-home</servlet-name>
-        <url-pattern>/profile</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>admin-login</servlet-name>
-        <jsp-file>/console/admin/admin-login.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>admin-login</servlet-name>
-        <url-pattern>/admin-login</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>admin-login-test</servlet-name>
-        <jsp-file>/console/admin/admin-login-check.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>admin-login-test</servlet-name>
-        <url-pattern>/admin-login-check</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>admin-console</servlet-name>
-        <jsp-file>/console/admin/admin.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>admin-console</servlet-name>
-        <url-pattern>/admin-console</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>admin-console-new-product</servlet-name>
-        <jsp-file>/console/admin/add-new-product.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>admin-console-new-product</servlet-name>
-        <url-pattern>/product-registration</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>product-reg-check</servlet-name>
-        <jsp-file>/console/admin/product-reg-check.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>product-reg-check</servlet-name>
-        <url-pattern>/product-registration-check</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>contact</servlet-name>
-        <jsp-file>/others/contact.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>contact</servlet-name>
-        <url-pattern>/contact</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <description/>
-        <display-name>Test</display-name>
-        <servlet-name>Test</servlet-name>
-        <servlet-class>com.tirtho.servlet.Test</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Test</servlet-name>
-        <url-pattern>/Test</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ProductRegistrationCheck</servlet-name>
-        <url-pattern>/ProductRegistrationCheck</url-pattern>
-    </servlet-mapping>
-    
-    
-    <servlet>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>Jersey Web Application</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>com.marayaglobal</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductRegistrationCheck</servlet-name>
+		<servlet-class>ProductRegistrationCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jersey Web Application</servlet-name>
+		<url-pattern>/webapi/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<jsp-file>/registration/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>product-registration</servlet-name>
+		<jsp-file>/registration/product-registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>product-registration</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>user-registration-check</servlet-name>
+		<jsp-file>/registration/user-registration-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user-registration-check</servlet-name>
+		<url-pattern>/signup/check</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>customer-home</servlet-name>
+		<jsp-file>/console/customer/Home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customer-home</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>admin-login</servlet-name>
+		<jsp-file>/console/admin/admin-login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-login</servlet-name>
+		<url-pattern>/admin-login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>admin-login-test</servlet-name>
+		<jsp-file>/console/admin/admin-login-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-login-test</servlet-name>
+		<url-pattern>/admin-login-check</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>admin-console</servlet-name>
+		<jsp-file>/console/admin/admin.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-console</servlet-name>
+		<url-pattern>/admin-console</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>admin-console-new-product</servlet-name>
+		<jsp-file>/console/admin/add-new-product.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-console-new-product</servlet-name>
+		<url-pattern>/product-registration</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>product-reg-check</servlet-name>
+		<jsp-file>/console/admin/product-reg-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>product-reg-check</servlet-name>
+		<url-pattern>/product-registration-check</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>contact</servlet-name>
+		<jsp-file>/others/contact.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>Test</display-name>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.tirtho.servlet.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/Test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProductRegistrationCheck</servlet-name>
+		<url-pattern>/ProductRegistrationCheck</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
 		<servlet-name>search</servlet-name>
 		<jsp-file>/option-menu/search.jsp</jsp-file>
 	</servlet>
@@ -123,7 +125,7 @@
 		<servlet-name>search</servlet-name>
 		<url-pattern>/search</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>electronics-page</servlet-name>
 		<jsp-file>/option-menu/electronics.jsp</jsp-file>
@@ -164,7 +166,7 @@
 		<servlet-name>latest-deals</servlet-name>
 		<url-pattern>/latest-deals</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>gift-sets</servlet-name>
 		<jsp-file>/option-menu/gift-sets.jsp</jsp-file>
@@ -181,7 +183,7 @@
 		<servlet-name>baby-care-Toys</servlet-name>
 		<url-pattern>/baby-care-and-toys</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>car-care</servlet-name>
 		<jsp-file>/option-menu/car-care.jsp</jsp-file>
@@ -190,7 +192,7 @@
 		<servlet-name>car-care</servlet-name>
 		<url-pattern>/car-care</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>special-offers</servlet-name>
 		<jsp-file>/option-menu/special-offers.jsp</jsp-file>
@@ -199,7 +201,7 @@
 		<servlet-name>special-offers</servlet-name>
 		<url-pattern>/special-offers</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>renewed-gadgets</servlet-name>
 		<jsp-file>/option-menu/renewed-gadgets.jsp</jsp-file>
@@ -208,6 +210,88 @@
 		<servlet-name>renewed-gadgets</servlet-name>
 		<url-pattern>/renewed-gadgets</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
+
+
+	<servlet>
+		<servlet-name>current-cart</servlet-name>
+
+		<jsp-file>/console/customer/cart.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>current-cart</servlet-name>
+		<url-pattern>/cart</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>add-shipping</servlet-name>
+		<jsp-file>/console/customer/add-shipping-address.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add-shipping</servlet-name>
+		<url-pattern>/shipping-address</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>place-order</servlet-name>
+		<jsp-file>/console/customer/place-order.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>place-order</servlet-name>
+		<url-pattern>/place-order</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>admin-logout</servlet-name>
+		<jsp-file>/console/admin/logout.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-logout</servlet-name>
+		<url-pattern>/admin-logout</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>vendor-console</servlet-name>
+		<jsp-file>/console/vendor/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>vendor-console</servlet-name>
+		<url-pattern>/vendor-console</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>vendor-login-check</servlet-name>
+		<jsp-file>/console/vendor/vendor-login-check.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>vendor-login-check</servlet-name>
+		<url-pattern>/vendor-login-check</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>vendor-login</servlet-name>
+		<jsp-file>/console/vendor/vendor-login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>vendor-login</servlet-name>
+		<url-pattern>/vendor-login</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>vendor-product-view</servlet-name>
+		<jsp-file>/ajax/vendor/product-view.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>vendor-product-view</servlet-name>
+		<url-pattern>/my-product</url-pattern>
+	</servlet-mapping>
+
+
+
 </web-app>

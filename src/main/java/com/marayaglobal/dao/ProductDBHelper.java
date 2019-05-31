@@ -45,11 +45,11 @@ public class ProductDBHelper {
     static Connection connection = null;
 
     public static void main(String[] args) {
-//        List<Product> all = getAllByKeyword("Spring Roll",1,10);
-//        for (Product arg : all) {
-//            System.out.println(arg);
-//        }
-System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
+        List<Product> all = getAllByAuthorId(1,0,10);
+        for (Product p : all) {
+            System.out.println(p);
+        }
+//System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
     }
 
 
@@ -86,17 +86,15 @@ System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
         return products;
     }
     
-    public static List<Product> getById(int id) {
-        List<Product> products = new ArrayList<>();
+    public static Product getById(int id) {
+       Product product = new Product();
         connection = dbConnection.getConnection();
         try {
             String query = "SELECT * FROM " + TABLE_NAME+" where id="+id;
             statement = connection.prepareCall(query);
             rs = statement.executeQuery();
             while (rs.next()) {
-                Product product = new Product();
                 inputer(rs, product);
-                products.add(product);
             }
         } catch (SQLException ex) {
             Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
@@ -115,7 +113,7 @@ System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
                 Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
             }
         } 
-        return products;
+        return product;
     }
      public static List<Product> getAll(int start, int end) {
         List<Product> products = new ArrayList<>();
@@ -155,7 +153,7 @@ System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
             String query = "SELECT * FROM " + TABLE_NAME 
                     +" where "+AUTHOR_ID+"=? order by id LIMIT "+start+","+ end;
             statement = connection.prepareCall(query);
-            statement.setString(1, AUTHOR_ID);
+            statement.setInt(1, authorId);
             rs = statement.executeQuery();
             while (rs.next()) {
                 Product product = new Product();
@@ -163,7 +161,7 @@ System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
                 products.add(product);
             }
         } catch (SQLException ex) {
-            Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         } finally {
             try {
                 if (connection!=null) {
@@ -176,7 +174,7 @@ System.out.println("com.marayaglobal.dao.ProductDBHelper.main()"+getById(2));
                     rs.close();
                 }
             } catch (SQLException ex) {
-                Logger.getLogger(ProductDBHelper.class.getName()).log(Level.SEVERE, null, ex);
+               ex.printStackTrace();
             }
         }
         return products;

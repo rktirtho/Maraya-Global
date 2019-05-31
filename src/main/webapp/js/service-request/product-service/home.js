@@ -37,10 +37,24 @@ $(function() {
 	}
 	window.onscroll = yHandler;
 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    });
+	
+	
 	$('.logint-btn').click(
 			function() {
 				var userName = $('._sh_login_username').val();
 				var password = $('._sh_login_password').val();
+			
 				if(userName !="" && password !=null){}
 				$.get('http://localhost:8080/MarayaGlobal/webapi/user/login?email='+userName+'&password='+password, function(data) {
 					 location.reload();	
@@ -52,7 +66,7 @@ $(function() {
 					//url : 'http://localhost:8080/MarayaGlobal/webapi/user/login?email=ipsum@quis.com&password=5726',
 					//cache : false,
 					//success : function(data) {
-						console.log(data)
+						//console.log(data)
 				//	}
 
 				//});
@@ -65,8 +79,8 @@ $(function() {
 				.forEach(function(item) {
 					var row = $('.all-item');
 
-					var col = $("<div></div>").addClass('col-md-3 py-4');
-					var card = $('<div></div>').addClass('card');
+					var col = $("<div></div>").addClass('col-3 py-4');
+					var card = $('<div></div>').addClass('deals_itemtop list_item');
 					var image = $(
 							"<img src='http://lorempixel.com/400/200/sports/"
 									+ Math.ceil(Math.random() * 10) + "'>")
@@ -105,6 +119,16 @@ $(function() {
 											alert('You Have to login first')
 										} else if(data == 1){
 											alert('added to your cart');
+											$.ajax({
+												type : "GET",
+												url : "webapi/cart/itemCount",
+												cache : false,
+												success : function(data) {
+													console.log(data);
+													$('#item-in-cart').html(data);
+												}
+											});
+											
 											$('.btn-add-cart').prop("disabled",true);
 										}else{
 											

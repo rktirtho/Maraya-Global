@@ -10,9 +10,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<style type="text/css">
+<link rel="stylesheet" type="text/css" href="css/header/1.css">
+<link rel="stylesheet" type="text/css" href="css/header/2.css">
+<link rel="stylesheet" type="text/css" href="css/header/3.css">
+<link rel="stylesheet" type="text/css" href="css/header/4.css">
+<link rel="stylesheet" type="text/css" href="css/header/5.css">
+<link rel="stylesheet" type="text/css" href="css/header/6.css">
+<link rel="stylesheet" type="text/css" href="css/header/7.css">
+<link rel="stylesheet" type="text/css" href="css/header/8.css">
+<link rel="stylesheet" type="text/css" href="css/header/9.css">
+<link rel="stylesheet" type="text/css" href="css/header/10.css">
+<link rel="stylesheet" type="text/css" href="css/header/11.css">
+<link rel="stylesheet" type="text/css" href="css/header/12.css">
+<link rel="stylesheet" type="text/css" href="css/header/13.css">
+<link rel="stylesheet" type="text/css" href="css/header/14.css">
+<link rel="stylesheet" type="text/css" href="css/header/15.css">
 
-</style>
+
+
 
 <%
 	Customer customer = (Customer) session.getAttribute("currentUser");
@@ -22,7 +37,13 @@
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 	crossorigin="anonymous">
+<style type="text/css">
 
+dd{
+margin-bottom: 5px;
+font-size: .8rem
+}
+</style>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -84,7 +105,11 @@
 <script type="text/javascript"
 	src="https://global.awok.com//bitrix/templates/awok-lang/components/dev-awok/authorize/register-flashpop-ajax/script.js?15202454512429"></script>
 
-
+<style type="text/css">
+.header .header_cart .cart_icon {
+    background-image: url(images/design/header-sprite.png);
+}
+</style>
 
 
 </head>
@@ -3830,7 +3855,7 @@
 				</div>
 				<!-- awok-online-shopping-logo.png -->
 				<div class="site_logo">
-					<a href="<%=Basic.DOMAIN_NAME%>"><img style="height: 100%;"
+					<a href="<%=request.getContextPath()%>"><img style="height: 100%;"
 						src="images/util/logo.png" alt="Maraya Global" /></a>
 				</div>
 				<div class="site_search">
@@ -3864,10 +3889,10 @@
 					</script>
 				</div>
 				<div class="header_cart">
-					<a href="/cart/" data-event-category="click_tracking"
+					<a href="cart" data-event-category="click_tracking"
 						data-event-action="before_view_cart"
-						data-event-label="header-icon"> <span class="cart_icon">
-							<span class="zero_number_items">0</span>
+						data-event-label="header-icon">	 <span class="cart_icon">
+							<span class="zero_number_items" id="item-in-cart" >0</span>
 					</span> <span class="cart_info"> item(s) <em>Cart</em>
 					</span>
 					</a>
@@ -3922,7 +3947,7 @@
 						} else {
 					%>
 					<div class="user_options_link drop_link cursor_pointer">
-						<span class="user_options_icon"><i class="far fa-2x fa-user"></i></span> <span
+						<span class="user_options_icon"></span> <span
 							class="user_options_info"> <em><a class="login"
 								href="/user/login/">Sign In</a> / <a class="register"
 								href="signup">Register</a></em> Welcome Guest
@@ -4078,6 +4103,7 @@
 
 		});
 	</script>
+
 
 </body>
 </html>

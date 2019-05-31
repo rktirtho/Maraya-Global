@@ -12,7 +12,7 @@
 	Customer currentUser = (Customer) session.getAttribute("currentUser");
 	request.setAttribute("user", currentUser);
 	if (currentUser == null) {
-		response.sendRedirect("signup");
+		response.sendRedirect(request.getContextPath());
 	}
 %>
 
@@ -102,9 +102,17 @@ div {
 			<div class="tab-pane fade" id="cart" role="tabpanel"
 				aria-labelledby="contact-tab"></div>
 			<div class="tab-pane fade" id="coupons" role="tabpanel"
-				aria-labelledby="contact-tab">Coupons</div>
+				aria-labelledby="contact-tab">
+				<h4 class="my-3 text-center ">
+					<strong>No Coupons Found </strong>
+				</h4>
+			</div>
 			<div class="tab-pane fade" id="offers" role="tabpanel"
-				aria-labelledby="contact-tab">offers</div>
+				aria-labelledby="contact-tab">
+				<h4 class="my-3 text-center ">
+					<strong>No Offers Found </strong>
+				</h4>
+			</div>
 		</div>
 	</div>
 

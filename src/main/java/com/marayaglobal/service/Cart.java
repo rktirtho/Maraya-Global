@@ -35,6 +35,15 @@ public class Cart {
 			return -1;
 		}
 	}
+	
+	@Path("/itemCount")
+	@GET
+	public int cartItemCount(@Context HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		Customer customer = CustomerDBHelper.getBySession(session.getId());
+		return CartDBHelper.countCart(customer.getId());
+	}
+	
 
 	@GET
 	@Path("/get")

@@ -15,7 +15,7 @@
 	Customer currentUser = (Customer) CustomerDBHelper.getBySession(session.getId());
 
 	if (currentUser.getName() == null) {
-		//response.sendRedirect("signup");
+		response.sendRedirect(request.getContextPath());
 	}
 
 	List<OrderView> orders = OrderDBHelper.getOrderByCustomerId(currentUser.getId());
@@ -46,7 +46,7 @@
 				<td><c:out value="${u.getStatus()}"></c:out> </td>
 				<td class="col-4" ><a target="_blank" href="product-view.jsp?id=${u.getProductId()}"><c:out value="${u.getTitle() }"></c:out> </a></td>
 				<td><c:out value="${u.getQuantity() }"></c:out> </td>
-				<td><c:out value="${u.getCurrentPrice() }"></c:out> </td>
+				<td><c:out value="${u.getCurrentPrice() * u.getQuantity()}"></c:out> </td>
 			</tr>
 			</c:forEach>
 		</tbody>

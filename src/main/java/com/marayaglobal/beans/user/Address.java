@@ -16,6 +16,8 @@ public class Address {
     private String areaName;
     private String district;
     private String postCode;
+    private String phoneNumber;
+    
 
     public int getId() {
         return id;
@@ -64,7 +66,22 @@ public class Address {
     public void setPostCode(String postCode) {
         this.postCode = postCode;
     }
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", userID=" + userID + ", streetName=" + streetName + ", areaName=" + areaName
+				+ ", district=" + district + ", postCode=" + postCode + ", phoneNumber=" + phoneNumber + "]";
+	}
     
+	
     
     
 }

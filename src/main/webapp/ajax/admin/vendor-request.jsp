@@ -1,4 +1,5 @@
-<%@page import="com.marayaglobal.beans.user.Customer"%>
+<%@page import="com.marayaglobal.dao.VendorDBHelper"%>
+<%@page import="com.marayaglobal.beans.user.Vendor"%>
 <%@page import="java.util.List"%>
 <%@page import="com.marayaglobal.dao.AdminDBHelper"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -7,11 +8,11 @@
 <head>
 <%
 	String name = AdminDBHelper.adminName(session.getId());
-	//if (name == null)
-	//	response.sendRedirect("signup");
+	if (name == null)
+		response.sendRedirect("signup");
 	
-	//List<Customer> customers = CustomerDBHelper.getall();
-	//request.setAttribute("customers", customers);
+	List<Vendor> vendors = VendorDBHelper.getVerifiedVendor();
+	request.setAttribute("customers", vendors);
 %>
 
 <head>
@@ -29,7 +30,7 @@
     </tr>
   </thead>
   <tbody>
-  <c:forEach var="u" items="${customers}">
+  <c:forEach var="u" items="${vendors}">
    <tr>
       <td scope="row">${u.getName()}</td>
       <td><a href="mailto:">${u.getEmail()}</a></td>

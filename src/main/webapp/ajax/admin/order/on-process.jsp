@@ -21,9 +21,9 @@ span {
 	<%
 		String name = AdminDBHelper.adminName(session.getId());
 		if (name == null)
-			response.sendRedirect("signup");
+			response.sendRedirect(request.getContextPath());
 
-		List<Order> orders = OrderDBHelper.getOrderByStatus("Processing");
+		List<Order> orders = OrderDBHelper.getOrderByStatus("Prosessing");
 		request.setAttribute("orders", orders);
 	%>
 
@@ -56,10 +56,14 @@ span {
 					<span>Address: </span>${u.getShippingArea()}<br>
 					<span>City: </span>${u.getShippingCity()} - ${u.getShippingPostCode()}<br>
 					</td>
-					<td>${u.getQuantity()}</td>
 					<td>${u.getPrice()}</td>
+					<td>${u.getQuantity()}</td>
 					<td>${u.getPrice()* u.getQuantity()}</td>
 					<td>${u.getTimestamp()}</td>
+					<td><button value="${u.getOrderId()}"
+							class="btn btn-outline-success mark-delivered">Mark as Delivered</button> </td>
+							
+					
 
 				</tr>
 
@@ -70,5 +74,24 @@ span {
 
 		</tbody>
 	</table>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.mark-delivered').click(function() {
+				alert("Are you sure?")
+				var val = $(this).val();
+				$.ajax({
+					type : "GET",
+					url : 'webapi/markas/delivered/' + val,
+					cache : false,
+					success : function(data) {
+						location.reload()
+					}
+				});
+
+			});
+		});
+	</script>
+	
 </body>
 </html>

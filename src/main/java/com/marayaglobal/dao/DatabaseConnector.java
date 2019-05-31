@@ -93,13 +93,13 @@ public class DatabaseConnector {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            connection = (Connection) DriverManager.getConnection(DATABASE_HOST,
+            connection = DriverManager.getConnection(DATABASE_HOST,
                     DATABASE_USER_NAME, DATABASE_PASSWORD);
             Statement statement = connection.createStatement();
 
             statement.executeUpdate(DATABASE_CREATE_COMMAND);
 
-            connection = (Connection) DriverManager.getConnection(DATABASE_HOST + DATABASE_NAME,
+            connection = DriverManager.getConnection(DATABASE_HOST + DATABASE_NAME,
                     DATABASE_USER_NAME, DATABASE_PASSWORD);
             statement = connection.createStatement();
 
@@ -111,10 +111,12 @@ public class DatabaseConnector {
 //            
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DatabaseConnector.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         } catch (SQLException ex) {
-            Logger.getLogger(DatabaseConnector.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
+        	//Logger.getLogger(DatabaseConnector.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
+            
         }
         return connection;
     }

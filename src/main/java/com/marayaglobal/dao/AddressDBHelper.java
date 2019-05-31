@@ -29,12 +29,46 @@ public class AddressDBHelper {
 	public static String AREA_NAME = "areaName";
 	public static String DISTRICT = "district";
 	public static String POST_CODE = "postCode";
+	public static String COMMA = " , ";
 
 	static DatabaseConnector dbConnector = DatabaseConnector.getInstance();
 	private static Connection connection = null;
 	private static PreparedStatement statement = null;
 	private static ResultSet rs = null;
+	
+	public static void main(String[] args) {
+		System.out.println(getLastBilling(2));
+	}
 
+	public static Address getLastBilling(int id) {
+		Address address = new Address();
+		connection = dbConnector.getConnection();
+		
+		try {
+			statement = connection.prepareCall("SELECT "
+			+OrderDBHelper.SHIPPING_PHONE+COMMA
+			+OrderDBHelper.SHIPPING_AREA+COMMA
+			+OrderDBHelper.SHIPPING_CITY+COMMA
+			+OrderDBHelper.SHIPPING_POST_CODE
+			+" from "+OrderDBHelper.TABLE_NAME
+			+" where customer_id ="+id+" order by "
+			+OrderDBHelper.ORDER_PLACED+" DESC ");
+			
+			rs= statement.executeQuery();
+			while(rs.next()) {
+				address.setPhoneNumber(rs.getString(OrderDBHelper.SHIPPING_PHONE));
+				address.setAreaName(rs.getString(OrderDBHelper.SHIPPING_AREA));
+				address.setDistrict(rs.getString(OrderDBHelper.SHIPPING_CITY));
+				address.setPostCode(rs.getString(OrderDBHelper.SHIPPING_POST_CODE));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return address;
+	}
+	
 	public static Address getByUserId(int id) {
 		connection = dbConnector.getConnection();
 		Address address = new Address();

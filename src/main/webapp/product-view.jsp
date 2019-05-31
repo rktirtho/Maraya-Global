@@ -26,10 +26,7 @@
 
 <title>Maraya Global | <c:out value="${u.getTitle()}"></c:out>
 </title>
-<link rel="stylesheet" type="text/css" href="css/header/2.css">
-<link rel="stylesheet" type="text/css" href="css/header/8.css">
-<link rel="stylesheet" type="text/css" href="css/header/13.css">
-<link rel="stylesheet" type="text/css" href="css/header/14.css">
+
 
 <link rel="stylesheet" href="css/vendor/etalage.css">
 <link rel="stylesheet" href="css/vendor/bootstrap_1.css">
@@ -74,18 +71,17 @@
 	color: #fff;
 	background: #EA2F3D
 }
-
-
 </style>
 
 
 
 </head>
 <body>
-	<%@include file="static-page/nav-bar.jsp"%>
+	<%@include file="static-page/nav-bar.jsp"%>	
+	
 	<div class="container-fluid">
 		<div class="row">
-			<aside class="col-lg-4 col-md-12 border-right py-5">
+			<aside class="col-4 py-5">
 				<article class="gallery-wrap py-5">
 					<div class="grid images_3_of_2">
 						<ul id="etalage">
@@ -113,7 +109,7 @@
 				</article>
 				<!-- gallery-wrap .end// -->
 			</aside>
-			<aside class="col-lg-7 col-md-12">
+			<aside class="col-7">
 				<article class="card-body p-5">
 					<h3 class="title mb-3">
 						<c:out value="${u.getTitle()}"></c:out>
@@ -136,27 +132,48 @@
 
 					<!-- price-detail-wrap .// -->
 					<dl class="item-property py-3">
-						<dt>Quick Overview</dt>
+						<dt class="h5 ">Quick Overview</dt>
 						<dd>
-							<span>Processor</span> - Intel CDC N4000
+							<span>Processor</span> -
+							<c:if test="${not empty u.getProcessor()}">
+								<span>${u.getProcessor()} </span> ${u.getGenaration()} <span> Gen</span>
+							</c:if>
 						</dd>
 						<dd>
-							<span>Processor Clock Speed</span> - 1.10-2.6GHz
+							<span>Processor Clock Speed</span> -
+							<c:if test="${not empty u.getClockSpeed()}">
+							${u.getClockSpeed()}
+						</c:if>
 						</dd>
 						<dd>
-							<span>Display Size </span>Display Size - 11.6"
+							<span>Display Size </span> -
+							<c:if test="${not empty u.getDisplaySize()}">
+							${u.getDisplaySize()}
+						</c:if>
 						</dd>
 						<dd>
-							<span>RAM</span>- 4GB
+							<span>RAM</span>-
+							<c:if test="${not empty u.getRam()}">
+							${u.getRam()}
+						</c:if>
 						</dd>
 						<dd>
-							<span>RAM Type</span>- DDR4
+							<span>RAM Type</span>-
+							<c:if test="${not empty u.getRamType()}">
+							${u.getRamType()}
+						</c:if>
 						</dd>
 						<dd>
-							<span>Storage</span>- 500GB HDD
+							<span>Storage</span>-
+							<c:if test="${not empty u.getStorage()}">
+							${u.getStorage()}
+						</c:if>
 						</dd>
 						<dd>
-							<span>Graphics Chipset</span>- Intel HD Graphics 600
+							<span>Graphics Chipset</span>-
+							<c:if test="${not empty u.getGraphicsChipset()}">
+						${u.getGraphicsChipset()}
+						</c:if>
 						</dd>
 					</dl>
 
@@ -168,7 +185,7 @@
 				</article>
 				<!-- card-body.// -->
 			</aside>
-			<aside class="col-lg-1 col-md-12">
+			<aside class="col-1">
 				<div class="col-12">Seller Info</div>
 			</aside>
 
@@ -178,10 +195,10 @@
 	</div>
 	<div class="container-fluid my-3">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
-			<li class="nav-item"><a class="nav-link active" id="home-tab"
+			<li class="nav-item"><a class="nav-link " id="home-tab"
 				data-toggle="tab" href="#details" role="tab" aria-controls="details"
 				aria-selected="true">Details</a></li>
-			<li class="nav-item"><a class="nav-link" id="profile-tab"
+			<li class="nav-item"><a class="nav-link active" id="profile-tab"
 				data-toggle="tab" href="#specification" role="tab"
 				aria-controls="specification" aria-selected="false">Specification</a></li>
 			<li class="nav-item"><a class="nav-link" id="contact-tab"
@@ -189,13 +206,13 @@
 				aria-selected="false">Comments</a></li>
 		</ul>
 		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="details" role="tabpanel"
+			<div class="tab-pane fade " id="details" role="tabpanel"
 				aria-labelledby="home-tab">
 				<p>
 					<c:out value="${u.getDescription()}"></c:out>
 				</p>
 			</div>
-			<div class="tab-pane fade" id="specification" role="tabpanel"
+			<div class="tab-pane fade show active" id="specification" role="tabpanel"
 				aria-labelledby="profile-tab">
 				<h2 class="h4 py-3">Additional Information</h2>
 				<table class="table" id="product-attribute-specs-table">
@@ -458,21 +475,19 @@
 					url : "webapi/cart/add?id=" + id,
 					cache : false,
 					success : function(data) {
-						
+
 						if (data == -1) {
 							alert('You have to login first')
 							//$('#Mymodal').modal('show');
-						} else if(data == 1){
+						} else if (data == 1) {
 							alert('added to your cart');
-							$('.btn-add-cart').prop("disabled",true);
-						}else{
-							
+							$('.btn-add-cart').prop("disabled", true);
+						} else {
+
 						}
 					}
 				});
 			});
-
-			
 
 		});
 	</script>

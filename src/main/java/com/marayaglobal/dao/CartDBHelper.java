@@ -22,7 +22,7 @@ public class CartDBHelper {
 
 
 	public static void main(String[] args) {
-		System.out.println(create(4, 1));
+		System.out.println(countCart(2));
 	}
 
     public static int create(int id, int cId) {
@@ -148,6 +148,26 @@ public class CartDBHelper {
 
 		return carts;
 	}
+	
+	public static int countCart(int userId) {
+		int number =0;
+		connection = dbConnector.getConnection();
+		try {
+			statement = connection.prepareCall("SELECT COUNT(id) AS NumberOfOrder FROM orders where customer_id=? and is_placed=false");
+			statement.setInt(1, userId);
+			rs = statement.executeQuery();
+			if (rs.next()) {
+				number = rs.getInt("NumberOfOrder");
+			}
+		
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return number;
+	}
+	
 
 	private static void inputer(ResultSet rs, CartView cart) throws SQLException {
 		cart.setId(rs.getInt("order_id"));

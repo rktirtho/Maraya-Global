@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	 <%= product.getTitle() %>
 </body>
 </html>

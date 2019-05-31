@@ -223,7 +223,7 @@ System.out.println(status);
 	}
 
 	public static Customer login(String email, String password, String session) {
-		int status = 0;
+		
 		connection = dbConnector.getConnection();
 		Customer customer = new Customer();
 		try {

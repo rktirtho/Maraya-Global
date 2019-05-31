@@ -19,6 +19,12 @@
 	href="css/vendor/fontawesome-all.min.css">
 
 
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<style>
+
+
+</style>
 </head>
 <body>
 	<%@include file="../static-page/nav-bar.jsp"%>
@@ -45,15 +51,55 @@
 			</div>
 		</div>
 	</div>
-<div class="container-fluid main-container">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg medium-text">
+			<ul class="sort_list navbar-nav">
+				<li class="nav-item"><span class="nav-link title">SORTING:</span></li>
+				<li class="nav-item"><a class="nav-link sort-type" id="">Best Deals</a></li>
+				<li class="nav-item"><a class="nav-link sort-type" id="id desce ">Latest </a></li>
+				<li class="nav-item"><a class="nav-link sort-type" id="">Best Selling</a></li>
+				<li class="nav-item"><a class="nav-link sort-type" id="">Highest Discount</a></li>
+				<li class="nav-item"><a class="nav-link sort-type">Lowest Prices</a></li>
+				<li class="nav-item"><a class="nav-link sort-type">Highest Prices</a></li>
+				<li class="nav-item"><a class="nav-link sort-type">Recently Updated</a></li>
+
+
+			</ul>
+		</nav>
+	</div>
+	<div class="container-fluid main-container">
 		<div class="row all-item"></div>
 
 	</div>
+	<div class="loader">
+		<div class="spinner-grow text-primary " role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-secondary" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-success" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-danger" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-warning" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-info" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div class="spinner-grow text-dark" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<script type="text/javascript" src="js/vendor/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
 	<script type="text/javascript"
-		src="js/service-request/product-service/home.js"></script>
+		src="js/service-request/product-service/product-category/category.js"></script>
 
 </body>
 </html>

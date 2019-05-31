@@ -7,7 +7,7 @@
 <%
 	String name = AdminDBHelper.adminName(session.getId());
 	if (name == null)
-		response.sendRedirect("signup");
+		response.sendRedirect(request.getContextPath());
 %>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -151,8 +151,8 @@
 							</ul>
 						</div></li>
 
-					<li class="nav-item dropdown  user-menu"><a
-						class="nav-link dropdown-toggle" href="http://example.com"
+					<li class="nav-item dropdown  user-menu"><a 
+						class="nav-link dropdown-toggle " href="http://example.com"
 						id="navbarDropdownMenuLink" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false"> <img
 							src="http://via.placeholder.com/160x160" class="user-image"
@@ -160,9 +160,9 @@
 					</a>
 						<div class="dropdown-menu"
 							aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a> <a
-								class="dropdown-item" href="#">Another action</a> <a
-								class="dropdown-item" href="#">Something else here</a>
+							<a class="dropdown-item disabled" href="#">Create Admin</a> <a
+								class="dropdown-item disabled" href="#">Set Policy</a> <a
+								class="dropdown-item" href="admin-logout">Log Out</a>
 						</div></li>
 				</ul>
 			</div>
@@ -170,7 +170,7 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row">
-			<aside class="col-2 p-0 m-0">
+			<aside class="col-2 p-0 m-0 position-sticky">
 				<div class="sidebar left navbar-expand-lg">
 					<div class="user-panel">
 						<div class="pull-left image">
@@ -245,38 +245,54 @@
 								<li><a href=""> Credit Card form</a></li>
 							</ul></li>-->
 
-						<li id="new_order"><a href="#new-order"><i class="fa fa-files-o"></i> <span
-								class="nav-label">New order</span></a></li>
-						<li id="processing_order"><a href="#order-on-process"><i class="fa fa-files-o"></i> <span
-								class="nav-label">Order On Process</span></a></li>
-						<li id="delevered"><a href="#delivered"><i class="fa fa-files-o"></i> <span
-								class="nav-label">Delivered order</span></a></li>
+						<li id="new_order"><a href="#new-order"><i
+								class="fa fa-files-o"></i> <span class="nav-label">New
+									order</span></a></li>
+						<li id="processing_order"><a href="#order-on-process"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Order
+									On Process</span></a></li>
+						<li id="delevered"><a href="#delivered"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Delivered
+									order</span></a></li>
 
-						<li id="our_product"><a href="#our-product"><i class="fa fa-pie-chart"></i> <span
-								class="nav-label">Our Product</span> </a></li>
-								
-						<li id="add_new_product"><a href="product-registration" target="_blank"><i
-								class="fa fa-files-o"></i> <span class="nav-label">Add
-									New Product</span></a></li>
-									
-						<li id="vendor_product"><a href="#vendors-product"><i class="fa fa-files-o"></i> <span
-								class="nav-label">Vendors Product</span></a></li>
-						<li id ="vendors"><a href="#all-vendor"><i class="fa fa-files-o"></i> <span
-								class="nav-label">All Vendors</span></a></li>
+						<li id="our_product"><a href="#our-product"><i
+								class="fa fa-pie-chart"></i> <span class="nav-label">Our
+									Product</span> </a></li>
+
+						<li id="add_new_product"><a href="product-registration"
+							target="_blank"><i class="fa fa-files-o"></i> <span
+								class="nav-label">Add New Product</span></a></li>
+
+						<li id="vendor_product"><a href="#vendors-product"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Vendors
+									Product</span></a></li>
+						<li id="vendor-req"><a href="#all-vendor"><i
+								class="fa fa-files-o"></i> <span class="nav-label">New Vendor Request</span></a></li>
+
+						<li id="vendors"><a href="#all-vendor"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Verified
+									Vendors</span></a></li>
 
 
-						<li><a href="#product-feedback"><i class="fa fa-files-o"></i> <span
-								class="nav-label">Product Feedback</span></a></li>
+
+						<li><a href="#product-feedback"><i class="fa fa-files-o"></i>
+								<span class="nav-label">Product Feedback</span></a></li>
 
 						<li id="all-customer"><a href="#all-customer"><i
 								class="fa fa-files-o"></i> <span class="nav-label">All
 									Customer</span></a></li>
 
-						<li id="all-massage"><a href="#massages"><i class="fa fa-files-o"></i>
-								<span class="nav-label">Massage</span></a></li>
+						<li id="all-massage"><a href="#massages"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Client
+									Feedback</span></a></li>
 
-						<li id="update-address"><a href="#update-address"><i class="fa fa-files-o"></i> <span
+						<li id="update-address" class="disabled"><a
+							href="#update-address"><i class="fa fa-files-o"></i> <span
 								class="nav-label">Update Address</span></a></li>
+
+						<li id="mail-send"><a href="#mail-send"><i
+								class="fa fa-files-o"></i> <span class="nav-label">Send
+									E-mail To customer</span></a></li>
 					</ul>
 				</div>
 
@@ -286,9 +302,10 @@
 			</div>
 		</div>
 		<a id="back-to-top" href="#"
-			class="btn btn-secondary btn-lg back-to-top" role="button"
-			title="Click to return on the top page" data-toggle="tooltip"
-			data-placement="left"> <i class="fas fa-arrow-alt-circle-up"></i></a>
+			class="btn btn-primary  btn-lg back-to-top rounded-circle"
+			role="button" title="Click to return on the top page"
+			data-toggle="tooltip" data-placement="left"> <i
+			class="fa fa-caret-up"></i></a>
 
 	</div>
 
@@ -297,6 +314,7 @@
 	<script src="js/vendor/bootstrap.js"></script>
 	<script>
 		$(document).ready(function() {
+
 			$('.button-left').click(function() {
 				$('.sidebar').toggleClass('fliph');
 			});
@@ -306,16 +324,14 @@
 
 	<script>
 		$(document).ready(function() {
-			
+
 			$.ajax({
 				url : "ajax/admin/order/new.jsp",
 				success : function(result) {
 					$(".data-container").html(result);
 				}
 			});
-			
-			
-			
+
 			$("#new_order").click(function() {
 				$.ajax({
 					url : "ajax/admin/order/new.jsp",
@@ -324,7 +340,7 @@
 					}
 				});
 			});
-			
+
 			$("#processing_order").click(function() {
 				$.ajax({
 					url : "ajax/admin/order/on-process.jsp",
@@ -333,7 +349,7 @@
 					}
 				});
 			});
-			
+
 			$("#delevered").click(function() {
 				$.ajax({
 					url : "ajax/admin/order/delevered.jsp",
@@ -342,8 +358,7 @@
 					}
 				});
 			});
-			
-			
+
 			$("#our_product").click(function() {
 				$.ajax({
 					url : "ajax/admin/product.jsp",
@@ -353,11 +368,18 @@
 				});
 			});
 
-			
-			
 			$("#vendor_product").click(function() {
 				$.ajax({
 					url : "ajax/admin/vendor-product.jsp",
+					success : function(result) {
+						$(".data-container").html(result);
+					}
+				});
+			});
+			
+			$("#vendor-req").click(function() {
+				$.ajax({
+					url : "ajax/admin/vendor-req.jsp",
 					success : function(result) {
 						$(".data-container").html(result);
 					}
@@ -372,7 +394,6 @@
 					}
 				});
 			});
-			
 
 			$("#all-customer").click(function() {
 				$.ajax({
@@ -386,6 +407,17 @@
 			$("#all-massage").click(function() {
 				$.ajax({
 					url : "ajax/admin/massages.jsp",
+					success : function(result) {
+						$(".data-container").html(result);
+					}
+				});
+			});
+
+			$("#mail-send").click(function() {
+				console.log(1)
+				$.ajax({
+
+					url : "ajax/admin/mail-sender.jsp",
 					success : function(result) {
 						$(".data-container").html(result);
 					}

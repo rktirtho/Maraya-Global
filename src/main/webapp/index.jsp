@@ -1,17 +1,14 @@
 <html>
 <head>
+	<script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "test.jsp";
+}
+
+</script>
 <title>Maraya Global | Home</title>
 
-<link rel="stylesheet" type="text/css" href="css/header/1.css">
-<link rel="stylesheet" type="text/css" href="css/header/2.css">
-<link rel="stylesheet" type="text/css" href="css/header/3.css">
-<link rel="stylesheet" type="text/css" href="css/header/4.css">
-<link rel="stylesheet" type="text/css" href="css/header/5.css">
-<link rel="stylesheet" type="text/css" href="css/header/7.css">
-<link rel="stylesheet" type="text/css" href="css/header/9.css">
-<link rel="stylesheet" type="text/css" href="css/header/8.css">
-<link rel="stylesheet" type="text/css" href="css/header/13.css">
-<link rel="stylesheet" type="text/css" href="css/header/14.css">
 <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap_1.css">
 <link rel="stylesheet" type="text/css"
 	href="css/vendor/fontawesome-all.min.css">
@@ -278,12 +275,10 @@
 			<span class="sr-only">Loading...</span>
 		</div>
 	</div>
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<%@include file="static-page/footer.html"%>
 
-	<!--        <h2 class="btn ">Jersey RESTful Web Application!</h2>
-                <p><a href="webapi/myresource">Jersey resource</a>
-                <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
-                    for more information on Jersey!</p>-->
+	
 
 	<script type="text/javascript" src="js/vendor/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
@@ -292,7 +287,9 @@
 		src="js/service-request/product-service/home.js"></script>
 
 	<script type="text/javascript">
-		
+	
 	</script>
+	
+
 </body>
 </html>
