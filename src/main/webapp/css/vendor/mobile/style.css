@@ -1,0 +1,79 @@
+.offers_landing_form {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input[type="radio"]{
+    float: left;
+}
+
+.sop_form_phone{
+    width: 85% !important;
+    float: right;
+}
+
+label.input_container.gender_radio input[type="radio"]{
+    float: left;
+    width: 13px;
+}
+
+.general_form .gender_container{
+    float: left;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.general_form .gender_radio{
+    width: 30% !important;
+    padding: 0 10px;
+    float: left;
+
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.general_form .pre{
+    background-color: #DDD;
+    width: 15%;
+    text-align: center;
+    display: block;
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    color: #666;
+}
+
+.general_form .register_form_submit{
+    width: 100%;
+    height: 43px;
+    line-height: 26px;
+}
+
+.general_form .register_form_submit.req_processing {
+    padding-left                : 18px;
+    background                  : #E5E5E5 url(images/button-loader-new.gif) no-repeat 7px center;
+    background-size             : 15px;
+    color                       : #666 !important;
+    font-size                   : 13px;
+}
+
+label.input_container.gender_radio span{
+    float: left;
+    display: block;
+    width: 47px;
+    padding-left: 5px;
+    line-height: 13px;
+}
+
+.ln-ar .general_form .gender_container{
+    float: right;
+}
+
+.ln-ar label.input_container.gender_radio input[type="radio"] {
+    float: right;
+    width: 13px;
+}
+
+.ln-ar .general_form .pre {
+    direction: ltr;
+}

@@ -1,0 +1,408 @@
+/*Menu Styles*/
+
+
+.mobile-menu .login_signup_links{
+    background              : #838383 url('../images/head-bg.jpg');
+    height                  : 43px;
+    background-size         : cover;
+    background-repeat       : no-repeat;
+}
+.mobile-menu .login_signup_links li{
+    float                   : left;
+    height                  : 41px;
+    padding                 : 10px 0;
+}
+.mobile-menu .login_signup_links li.user_image{
+	display 				: block;
+	padding 				:5px 0 0 15px;
+}
+.mobile-menu .login_signup_links li.user_image img {
+	max-width 				: 98%;
+	max-height 				: 98%;
+  background        : #ffffff;
+
+	-webkit-border-radius 	: 50%;
+	-moz-border-radius 		: 50%;
+	border-radius 			: 50%;
+}
+.mobile-menu .login_signup_links li a{
+    font-size               : 14px;
+    border-bottom           : 0;
+    padding                 : 0;
+    color                   : #ffffff;
+}
+.mobile-menu .login_signup_links li a.my_account{
+    position                : relative;
+    margin                  : 0 0 0 15px;
+}
+.mobile-menu .login_signup_links li a.logout img {
+    max-width: 25px;
+    max-height: 25px;
+}
+.mobile-menu .login_signup_links li a.logout{
+    line-height             : 20px;
+    height                  : 22px;
+    font-size               : 12px;
+    width                   : 55px;
+    float                   : right;
+    border                  : 0;
+    display                 : block;
+    margin                  : 0px 15px 11px 0;
+    color                   : #ffffff;
+    text-align              : right;
+}
+.mobile-menu .login_signup_links li a.login,
+.mobile-menu .login_signup_links li a.signup{
+    padding                 : 0 15px;
+}
+.mobile-menu .login_signup_links li a.login i,
+.mobile-menu .login_signup_links li a.signup i{
+  margin-right            : 5px;
+}
+.mobile-menu .login_signup_links li a.login{
+  border-right            : 1px solid #ffffff;
+}
+
+
+/* ==========================================================================
+   Offers Deals Menu
+   ========================================================================== */
+.mobile-menu .offers_deals{
+  border-bottom             : 1px solid #dddddd;
+}   
+.mobile-menu .offers_deals li{
+  background              : #ffffff;
+}
+.mobile-menu .offers_deals li a{
+  padding                 : 0 0 0 15px;
+  color                   : #555555;
+  font-size               : 13px;
+  width                   : 100%;
+  position                : relative;
+  border                  : 0;
+  height                  : 40px;
+  line-height             : 40px;
+}
+.mobile-menu .offers_deals li a i{
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 7px;
+  color                 : #666666;
+}
+
+/* ==========================================================================
+   Account Options Menu
+   ========================================================================== */
+.mobile-menu .account_options{
+  
+}   
+.mobile-menu .account_options li{
+  background              : #f5f5f5;
+  /*border-bottom             : 1px solid #dddddd;*/
+  position                : relative;
+}
+.mobile-menu .account_options li a{
+  color                   : #555555;
+  font-size               : 13px;
+  width                   : 100%;
+  position                : relative;
+  border                  : 0;
+  height                  : 35px;
+  line-height             : 35px;
+  padding-left            : 40px;
+  display                 : block;
+}
+.mobile-menu .account_options li a img,
+.mobile-menu .account_options li img{
+  width                   : 18px;
+  height                  : 18px;
+  position                : absolute;
+  top                     : 50%;
+  left                    : 10px;
+  margin-top              : -10px;
+}
+
+.mobile-menu .account_options li.lang{
+  color: #555555;
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+  border: 0;
+  height: 35px;
+  line-height: 30px;
+  padding-left: 40px;
+  display: block; 
+}
+
+.mobile-menu .account_options li #language_select{
+    width: 100px;
+    font-size: 11px;
+    height: 26px;
+    padding: 0;
+    margin-left: 24px;
+    padding:0 3px;
+}
+
+
+/* ==========================================================================
+   Footer Links
+   ========================================================================== */
+.mobile-menu .footer_links{
+  border-bottom             : 1px solid #dddddd;
+  padding                 : 3px 0;
+}   
+.mobile-menu .footer_links li{
+    background              : #ffffff;
+}
+.mobile-menu .footer_links li a{
+    padding                 : 0 0 0 12px;
+    color                   : #555555;
+    font-size               : 12px;
+    width                   : 100%;
+    position                : relative;
+    border                  : 0;
+    height                  : 30px;
+    line-height             : 30px;
+    display                 : block
+}
+
+/* ==========================================================================
+   All Categories Box
+   ========================================================================== */
+
+.mobile-menu .all_categories .cat_menu_heading {
+  margin: 0;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  background: #dddddd;
+  color: #555555;
+  font-size: 13px;
+  position: relative;
+  padding-left: 10px !important;
+  font-family: 'roboto-bold' 'droid';
+  text-transform: uppercase;
+  color: #222;
+  border-bottom: 1px solid #ccc;
+}
+.mobile-menu .all_categories a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  color: #555555;
+  font-size: 13px;
+  position: relative;
+  padding-left: 10px;
+}
+.mobile-menu .all_categories a .chevron {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 15px;
+  top: 50%;
+  margin-top: -6px;  
+}
+.mobile-menu .all_categories a .main_ico{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 10px;
+  margin-top: -10px;
+}
+.menu_cat_item.all_link {
+    font-family: 'roboto-bold' 'droid';
+    font-weight: normal;
+    padding-left: 10px !important;
+}
+.menu_cat_item.mobiles {
+  color: #D71B22 !important;
+}
+.menu_cat_item.tablets {
+  color: #43792D !important;
+}
+.menu_cat_item.laptops {
+  color: #4A7DDB !important;
+}
+.login_signup_links .top_links_right{
+	float:right !important;
+}
+.login_signup_links .top_links_left{
+	float:left;
+}
+
+
+/* ==========================================================================
+   Menu footer
+   ========================================================================== */
+.menu_footer .contact_details {
+  margin: 5px 0;
+}   
+.menu_footer .contact_details a {
+  color: #555555;
+  font-size: 12px;
+  width: 100%;
+  position: relative;
+  border: 0;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 35px;
+  display: block;
+}
+.menu_footer .contact_details img {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -10px;
+}
+.menu_footer .contact_details span .title,
+.menu_footer .contact_details span .value {
+  font-size: 13px;
+  display:inline-block;
+}
+.menu_footer .contact_details span .title{
+	width:51px;
+}
+
+
+
+.menu_footer .social_links_box {
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  margin: 20px 5px;
+}
+.menu_footer .social_links_box ul{
+  text-align: center;
+}
+.menu_footer .social_links_box ul li {
+  display: inline-block;
+  margin-right: 3px;
+}
+.menu_footer .social_links_box ul li a {
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.menu_footer .social_links_box ul li a img{
+  width: 16px;
+  height: 16px;
+}
+.menu_footer .social_links_box .facebook_link a {
+  background: #3b5998;
+}
+.menu_footer .social_links_box .googleplus_link a {
+  background: #db4a39;
+}
+.menu_footer .social_links_box .twitter_link a {
+  background: #24b6ee;
+}
+.menu_footer .social_links_box .linkedin_link a {
+  background: #0e76a8;
+}
+.menu_footer .social_links_box .pintrest_link a {
+  background: #c8232c;
+}
+
+.menu_footer .social_links_box .instagram_link a {
+  background: #48759C;
+}
+
+
+.payment_options {
+  margin: 20px 10px;
+  text-align: center;
+}
+.payment_options img {
+  width: 65%;
+  height: auto;
+}
+
+/* ==============================================================================================================
+   RTL Styles
+   ==============================================================================================================*/
+   
+.ln-ar .mobile-menu .login_signup_links li {
+  float: right;
+}
+.ln-ar .mobile-menu .login_signup_links li.user_image {
+  padding: 5px 15px 0 0px;
+}
+.ln-ar .mobile-menu .login_signup_links li a.login {
+  border-right: 0;
+  border-left: 1px solid #ffffff;
+}
+.ln-ar .mobile-menu .login_signup_links li a.my_account {
+  margin: 0 15px 0 0;
+}
+.ln-ar .menu_cat_item.all_link {
+  padding-left: 0 !important;
+  padding-right: 10px !important;
+}
+
+.ln-ar .mobile-menu .all_categories a {
+  padding-right: 10px;
+  padding-left: 0; 
+}
+.ln-ar .mobile-menu .all_categories a .main_ico {
+  left: auto;
+  right: 10px;
+}
+.ln-ar .mobile-menu .all_categories a .chevron {
+  right: auto;
+  left: 15px;
+}
+.ln-ar .mobile-menu .account_options li {
+  padding-right: 0px;
+  padding-left: 0;
+}
+.ln-ar .mobile-menu .account_options img {
+  left: auto;
+  right: 10px;
+}
+
+.ln-ar .mobile-menu .footer_links li a {
+  padding: 0 12px 0 0;
+}
+.ln-ar .menu_footer .contact_details a {
+  padding-left: 0;
+  padding-right: 35px;
+}
+.ln-ar .menu_footer .contact_details img {
+  left: auto;
+  right: 10px;
+}
+.ln-ar .menu_footer .contact_details span .title{
+  white-space: nowrap;
+  width: auto;
+}
+
+.ln-ar .login_signup_links .top_links_right{
+  float:left !important;  
+}
+
+.ln-ar .mobile-menu .account_options li a,
+.ln-ar .mobile-menu .account_options li.lang{
+  padding-right: 40px;
+  padding-left: 0px;
+}
+
+.ln-ar .mobile-menu .account_options li #language_select{
+  margin-right: 24px;
+  margin-left: 0px;
+}
+
+/*-------------------------------------------------/ RTL Styles /-----------------------------------------------*/  

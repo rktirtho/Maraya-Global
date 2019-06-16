@@ -13,8 +13,7 @@ $(function() {
 	$.get(query, showData, 'json');
 
 	function yHandler() {
-		// Watch video for line by line explanation of the code
-		// http://www.youtube.com/watch?v=eziREnZPml4
+		
 		var wrap = $(document);
 		var contentHeight = wrap.innerHeight();
 		var yOffset = window.pageYOffset;

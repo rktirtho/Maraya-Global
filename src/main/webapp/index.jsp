@@ -1,12 +1,20 @@
+<%@page import="java.awt.Toolkit"%>
+<%@page import="java.awt.Dimension"%>
 <html>
 <head>
-	<script type="text/javascript">
 
-if (screen.width <= 699) {
-document.location = "test.jsp";
-}
 
-</script>
+<%
+	
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		if (screenSize.getWidth()<=699) {
+			ServletContext context = getServletContext();
+			RequestDispatcher dispatcher = context.getRequestDispatcher("/test.jsp");
+			dispatcher.forward(request, response);
+		}
+	%>
+
+
 <title>Maraya Global | Home</title>
 
 <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap_1.css">
@@ -278,7 +286,7 @@ document.location = "test.jsp";
 	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<%@include file="static-page/footer.html"%>
 
-	
+
 
 	<script type="text/javascript" src="js/vendor/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.bundle.js"></script>
@@ -287,9 +295,9 @@ document.location = "test.jsp";
 		src="js/service-request/product-service/home.js"></script>
 
 	<script type="text/javascript">
-	
+		
 	</script>
-	
+
 
 </body>
 </html>

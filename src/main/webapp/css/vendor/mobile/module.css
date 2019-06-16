@@ -1,0 +1,384 @@
+
+a:hover{color: initial;}
+.deals {
+    min-height: 1143px;
+	padding: 7px 0;
+    background-color: #ffffff;
+}
+.deals_list {
+    margin: 0 -7px;
+}
+.deals_item {
+	width: 50%;
+    background: url('data:image/png;base64,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');
+    background-position: center 10%;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-size: 130px;
+
+    /*border-right: solid 1px #DDD;
+    border-bottom: solid 1px #DDD;*/
+    border: solid 2px #DDD;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 296px;
+}
+
+.aw_imagethmb img{
+    background-color: #fff;
+}
+.deals_bg{
+	/*background-color: #e6e6e6;*/
+}
+.deals_loading {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+    top: 100px;
+}
+/*.deals_itemtop {
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 1px 0 1px;
+}
+.deals_itembottom {
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 0 1px 1px 1px;
+}
+*/
+
+.bs_loading{
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+    margin-top: 12px;
+}
+
+.deals_off {
+    display: none !important;
+    position: absolute;
+    line-height: 20px;
+    padding: 0 5px;
+    font-size: 11px;
+    background-color: #f37111;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+.deals_timer {
+    line-height: 20px;
+    padding: 3px 0;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+.deals_image {
+    margin: 10px auto 3px;
+    max-width: 95%;
+    max-height: 95%;
+    height: 155px;
+}
+.deals_title {
+    overflow: hidden;
+    height: 28px;
+    margin: 5px 4px 0px;
+}
+.deals_title p {
+    color: #333333;
+	text-align: center;
+	font-size: 11px;
+    line-height: 14px;
+}
+.deals_price {
+    margin: 0 0 5px 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    max-height: 25px;
+}
+.deals_price .new_price {
+    display: inline-block;
+    font-size: 14px;
+    color: #d02f37;
+    line-height: 20px;
+    margin: 0 3px;
+}
+.deals_price .old_price {
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: line-through;
+    color: #777777;
+    line-height: 20px;
+    margin: 0 3px;
+}
+.toast_attributes{
+    display: none;
+}
+.deals_buynow {
+    /*line-height: 35px;
+    cursor: pointer;*/
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'roboto-bold','droid-bold';
+    background: #FF481F;
+    display: block;
+    margin: 0px 5px 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.deals_buynow:hover {
+	color: #ffffff;
+}
+.flashsalemanual_headingtimer h2{
+    /*padding: 0 0 20px !important;*/
+}
+.flash_sale_d7_heading h2 {
+    font-family: 'roboto', 'droid';
+    font-weight: normal;
+    font-size: 21px;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    color: #333;
+}
+
+.cart_success_pop {
+    font-family: 'roboto','droid';
+    background: #000;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    width: 95%;
+    text-align: center;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 9;
+    bottom: 54px;
+    font-size: 14px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.cart_success_pop .pop_up_close {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ln-ar .cart_success_pop .pop_up_close{
+    left: 0;
+    right: initial;
+}
+
+/* Fix for flash sales timer */
+.flashsale_heading h2 {
+    font-size: 13px;
+    color: #000000;
+    font-family: 'roboto-bold','droid-bold';
+    padding: 10px 10px 0px;
+}
+
+.flashsale_heading p {
+    color: #777777;
+    font-size: 14px;
+}
+
+.flashsale_producttime {
+    height: 30px;
+}
+
+.aw_imagethmb img {
+    max-height: none;
+}
+
+.currency-disp-Y .deals_price .new_price,
+.currency-idr .deals_price .new_price{
+    font-size: 14px;
+}
+
+.flashsale_products .deals_load_more{
+    display:none;
+    width: 98%;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    height: 44px;
+}
+
+.flashsale_products .deals_load_more a{
+    color: #ffffff !important;
+    width: 50px;
+    background: #D71A21;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 8px;
+    height: 100px;
+}
+
+.ln-ar .flashsale_products .deals_load_more{
+
+}
+
+.ln-ar .flashsale_products .deals_load_more a{
+    line-height: 44px;
+}
+
+li.fb_item {
+    border: solid 2px #ffd0b9;
+    background: #fffcfb;
+}
+
+.fb_item .deals_image {
+    height: 201px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fb_item .deals_title {
+    margin: 5px 4px 10px;
+}
+
+.fb_item .deals_itembottom {
+    clear: both;
+}
+.fb_item a.deals_buynow {
+    border: solid 1px #FF481F;
+    background: transparent;
+    color: #FF481F;
+}
+
+/**** Noman CSS ****/
+
+.deals_itembottom .buyNowBtn,
+.deals_itembottom .buyNowWithBtn {
+    width: 49.5%;
+    height: 65px;
+}
+
+.deals_itembottom .buyNowBtn {
+    float: left;
+    position: relative;
+}
+
+.deals_itembottom .buyNowBtn a,
+.deals_itembottom .buyNowWithBtn a {
+    background: #fff8ec;
+    border: solid 1px #f9d9a2;
+    height: 43px;
+    padding: 0 0 0 5px;
+    display: block;
+    margin: 22px 0 0 0;
+    text-align: left;
+}
+
+.deals_itembottom .priceStructure,
+.deals_itembottom .priceStructure {
+    line-height: normal;
+}
+
+.deals_itembottom .buyNowBtn p,
+.deals_itembottom .buyNowWithBtn p {
+    color: #666;
+    font-size: 7px;
+    text-transform: initial;
+    padding: 0px 0 0px 0;
+}
+
+.deals_itembottom .buyNowBtn .newPrice,
+.deals_itembottom .buyNowWithBtn .newPrice {
+    color: #333;
+    font-size: 14px;
+    font-family: 'roboto-bold', 'droid-bold';
+    margin: -2px 0 0px 0;
+    display: block;
+    font-weight: normal;
+}
+
+.deals_itembottom .buyNowBtn .oldPrice,
+.deals_itembottom .buyNowWithBtn .oldPrice {
+    color: #6e6e6e;
+    font-size: 10px;
+    text-decoration: line-through;
+    display: block;
+    margin: -3px 0 0 0;
+}
+
+.deals_itembottom .buyNowWithBtn {
+    float: right;
+    position: relative;
+}
+
+.deals_itembottom .buyNowWithBtn a {
+    background: #eb4e01;
+    border: solid 1px #eb4e01;
+}
+
+.deals_itembottom .buyNowWithBtn p {
+    color: #fff;
+}
+
+.deals_itembottom .buyNowWithBtn .newPrice {
+    color: #fff;
+}
+
+.deals_itembottom .buyNowWithBtn .oldPrice {
+    color: #ffdbca;
+}
+
+.deals_itembottom .buyNowWithBtn a:before {
+    color: #fff;
+}
+
+.ln-ar .deals_itembottom .buyNowBtn {
+    float: right;
+}
+
+.ln-ar .deals_itembottom .buyNowWithBtn {
+    float: left;
+}
+
+.ln-ar .deals_itembottom .buyNowBtn a,
+.ln-ar .deals_itembottom .buyNowWithBtn a {
+    padding: 0 5px 0 0;
+    text-align: right;
+}
+
+.ln-ar .deals_itembottom .buyNowBtn .oldPrice,
+.ln-ar .deals_itembottom .buyNowWithBtn .oldPrice {
+    margin-top: -7px;
+}
+
+.ln-ar .deals_itembottom .buyNowBtn .newPrice,
+.ln-ar .deals_itembottom .buyNowWithBtn .newPrice {
+    font-size: 11px;
+    margin-top: -3px;
+}
+
+.deals_itembottom .buyNowWithBtn .oldPrice span,
+.deals_itembottom .buyNowBtn .oldPrice span {
+    text-decoration: line-through;
+}
+
+.deals_itembottom .buyNowBtn a.mob_loading, .deals_itembottom .buyNowWithBtn a.mob_loading {
+    padding: 0 0 0 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 43px;
+}

@@ -1,0 +1,234 @@
+.instant_search_results{
+	overflow 					: auto;
+	height 						: 100%;
+	display						: none;
+}
+.instant_search_results .new_cat_results li{
+	border-bottom 				: 1px solid #dddddd;
+	clear 						: both;
+}
+.instant_search_results .new_cat_results li a{
+	height 						: 40px;
+	line-height 				: 40px;
+	display 					: block;
+	color 						: #555555;
+	font-size 					: 13px;
+	padding 					: 0 10px;
+}
+.instant_search_results .new_cat_results li a b{
+	font-family 				: 'roboto-bold';
+	font-weight 				: normal;
+	color 						: #D71B22;
+}
+.instant_search_results .isearch_item_info{
+	overflow 					: hidden;
+}
+.instant_search_results .isearch_item_info .is_cat_img,
+.instant_search_results .isearch_item_info .is_cat_title,
+.instant_search_results .isearch_item_info .is_cat_count{
+	display 					: inline-block;
+}
+.instant_search_results .isearch_item_info .is_cat_img{
+	display 					: none;
+}
+.instant_search_results .isearch_item_info .is_cat_count{
+	float 						: right;
+	color 						: #999999;
+	font-size 					: 12px;
+}
+
+.instant_search_results .search_suggestions ,
+.instant_search_results .model_suggestions {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.instant_search_results .search_suggestions li ,
+.instant_search_results .model_suggestions li {
+    display: inline-block;
+    padding: 3px;
+}
+.instant_search_results .search_suggestions a ,
+.instant_search_results .model_suggestions a {
+    line-height: 20px;
+    background: #F1F1EF;
+    font-size: 14px;
+    font-family:"roboto-bold","droid-bold";
+    color: #333;
+    padding: 0px 6px;
+    line-height: 25px;
+    display: block;
+    border-radius: 20px;
+}
+.instant_search_results .search_suggestions .title ,
+.instant_search_results .model_suggestions .title {
+    overflow: hidden;
+    display: block;
+}
+.instant_search_results .search_suggestions .title span ,
+.instant_search_results .model_suggestions .title span {
+	float: right;
+    font-size: 11px;
+    color: #777;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest{
+	height: 150px;
+    overflow: visible;
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    border-right: solid 1px #DDD;
+    border-bottom: solid 1px #DDD;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: initial;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest:last-child{
+	border-right: none;
+}
+
+.instant_search_results ul.new_cat_results li.product_suggest_title{
+	border-bottom: solid 1px #DDD;
+}
+
+.instant_search_results ul.new_cat_results li.product_suggest_title span{
+    height: 25px;
+    line-height: 10px;
+    position: absolute;
+    right: 0;
+    color: #797978;
+    margin: 5px 10px 0 0;
+    font-size: 11px;
+}
+
+.instant_search_results li.product_suggest_title:hover{
+	font-size: 11px;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest a{
+	overflow: visible;
+	height: 196px;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest ._is_prod_img {
+  	position:  relative;
+  	text-align:  center;
+  	width:  100%;
+  	display:  table;
+  	table-layout:  fixed;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest ._is_prod_img ._is_prod_img_inner {
+  	text-align:  center;
+ 	width:  100%;
+ 	height: 95px;
+  	display:  table-cell;
+  	vertical-align:  middle;
+  	padding: 10px 0 0 0;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest ._is_prod_img ._is_prod_img_inner img {
+  	max-height:  100%;
+  	max-width:  100%;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest .isearch_product_info{
+	overflow: hidden;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest .isearch_product_info ._is_prod_title{
+	font-size: 12px;
+    text-align: center;
+    height: 25px;
+    line-height: 12px;
+    overflow: hidden;
+    padding: 0px 5px;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest .isearch_product_info ._is_prod_price{
+	font-family: 'roboto-bold','droid-bold';
+	font-size: 12px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #cd2127;
+	text-align: right;
+	float: left;
+	padding: 0 5px;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.instant_search_results ul.new_cat_results li.prod_suggest .isearch_product_info ._is_prod_price_old{
+	font-family: 'roboto-bold','droid-bold';
+	font-size: 12px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #888;
+	text-align: left;
+	float: left;
+	padding: 0 5px;
+	box-sizing: border-box;
+	text-decoration: line-through;
+	width: 50%;
+}
+
+.instant_search_results .search_suggestions .search_term ,
+.instant_search_results .model_suggestions .search_term {
+	font-family :"roboto";
+	color: #555555;
+}
+
+.instant_search_results .search_suggestions a ,
+.instant_search_results .model_suggestions a {
+    line-height: 20px;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: "roboto-bold","droid-bold";
+    color: #333;
+    padding: 0px 6px;
+    line-height: 25px;
+    border: 0.5px solid #dddddd;
+    display: block;
+    border-radius: 20px;
+}
+
+.instant_search_results .search_suggestions .search_term ,
+.instant_search_results .model_suggestions .search_term {
+    font-family: "roboto";
+    color: #1f2836;
+}
+
+.instant_search_results .model_head{
+	display: none;
+	font-size: 14px;
+    font-family: "roboto-bold","droid-bold";
+    color: #333;
+    padding: 9px 0 0 12px;
+}
+
+.ln-ar .instant_search_results .model_head{
+	padding: 9px 12px 0 0;
+}
+
+/* ==============================================================================================================
+   RTL Styles
+   ==============================================================================================================*/
+
+.ln-ar .instant_search_results .isearch_item_info .is_cat_count {
+	float 						: left;
+}
+.ln-ar .instant_search_results ul.new_cat_results li.prod_suggest{
+	float 						: right;
+}
+.ln-ar .instant_search_results ul.new_cat_results li.prod_suggest .isearch_product_info ._is_prod_price_old{
+	padding 					: 0; 
+}
+/*-------------------------------------------------/ RTL Styles /-----------------------------------------------*/   

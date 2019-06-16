@@ -1,0 +1,456 @@
+a{ text-decoration: none !important; }
+.aw_left {float: left;}
+.ln-ar .aw_left {float: right;}
+.aw_right{float: right;}
+.ln-ar .aw_right {float: left;}
+
+/* osf_banner */
+.osf_banner { 
+    margin: 0px auto 0px;
+    width: 100%;
+}
+
+/* popup_wrapp_body */
+.popup_wrapp_body,.popup_wrapp_body_info{
+    display: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/*========================================
+=            terms popup            =
+========================================*/
+.terms_popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 50;
+    display: none;
+}
+.flashsale_manual {
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    background: #EFEFEF;
+    height: 100%;
+}
+.flashsale_manualleft {
+    background: #EFEFEF;
+    min-height: 165px;
+    padding: 15px 7px 7px 7px;
+    position: relative;
+}
+.flashsale_manualright {
+    background: #EFEFEF;
+    min-height: 165px;
+    padding: 7px;
+    position: relative;
+}
+.flashsalemanual_headingtimer {
+}
+.flashsale_manualright h5 {
+    color: #555555;
+    font-size: 14px;
+    margin: 0 0 7px 0;
+}
+.flashsale_manualtextinfo p {
+    color: #555555;
+    line-height: 16px;
+    font-size: 11px;
+    margin: 0 0 7px 0;
+    text-align: justify;
+}
+.flashsale_manualbutton {
+    font-size: 11px;
+    display: block;
+    line-height: 25px;
+    margin: 0;
+    width: 140px;
+    text-align: center;
+}
+.flashsale_manualbutton.upcoming {
+    background: #6cb119;
+    color: #ffffff;
+}
+.flashsale_manualbutton.buynow {
+    background: #ff481f;
+    color: #ffffff;
+}
+.flashsale_manualbutton.soldout {
+    background: #b5b5b5;
+    color: #ffffff;
+}
+.flashsale_manualtip {
+    display: block;
+    font-size: 12px;
+    color: #555555;
+    line-height: 25px;
+}
+.terms_popup .ico_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 60;
+}
+.ln-ar .terms_popup .ico_close {
+    right: auto;
+    left: 10px;
+}
+.terms_popup .ico_close img {
+    max-height: 20px;
+    max-width: 20px;
+}
+.flashsale_manualtextinfo h5 {
+    color: #555555;
+    font-size: 14px;
+    margin: 0 0 7px 0;
+    font-family: 'roboto-bold','droid-bold';
+}
+.flashsale_manualtextinfo ul li {
+    color: #555555;
+    margin: 0 0 7px 0;
+    font-size: 11px;
+    padding: 0 0 0 15px;
+    line-height: 16px;
+    position: relative;
+}
+
+.ln-ar .flashsale_manualtextinfo ul li{
+	padding: 0 15px 0 0;
+}
+
+.flashsale_manualtextinfo ul li:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid #8D8B8A;
+    border-bottom: 4px solid transparent
+}
+
+.ln-ar .flashsale_manualtextinfo ul li:before{
+	border-left: 0;
+	border-right: 5px solid #8D8B8A;
+	left: initial;
+	right: 4px;
+}
+
+.flashsale_manualheading h2 {
+    color: #000000;
+    margin: 0;
+    font-size: 19px;
+    font-weight: normal;
+    font-family: 'roboto-bold','droid-bold';
+}
+.flashsale_manualheading span {
+    color: #fc5b03;
+    font-size: 19px;
+}
+
+.ln-ar .flashsale_manualheading span {
+    float: right;
+}
+/*=====  End of terms popup  ======*/
+
+
+/*========================================
+=            Flash sale popup            =
+========================================*/
+.flash_popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 50;
+    display: none;
+    background: rgba(0,0,0,0.7);
+}
+.flash_popup_inner {
+    position: absolute;
+    bottom: 0;
+}
+.flash_popuphead {
+    background: #464646;
+    padding: 10px;
+    height: 39px;
+}
+.flash_popuphead h5 {
+    float: left;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'roboto-bold' 'droid';
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.flash_popuphead a {
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: initial;
+}
+.flash_popuphead a img {
+    max-width: 12px;
+    max-height: 12px;
+}
+.flash_popupbody {
+    background: #ffffff;
+    padding: 7px;
+}
+.popup_head.success {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    color: #3c763d;
+    font-size: 15px;
+    text-align: center;
+    line-height: 21px;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+/*=====  End of Flash sale popup  ======*/
+
+/* flashsale_products */
+.flashsale_products {
+    /*padding: 15px 0;*/
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.flashsale_products .heading{
+    margin: 0 0 15px 0;
+}
+.flashsale_products .heading h2 {
+    font-family: 'roboto', 'droid';
+    font-weight: normal;
+    font-size: 21px;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    color: #333;
+}
+.flashsale_products .products_list {
+    margin: 0 -5px;
+}
+.flashsale_products .products_list li {
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flashsale_products .products_list .list_item {
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 318px;
+    padding-top: 8px;
+}
+.flashsale_products .products_list .toplink {
+    display: block;
+}
+.flashsale_products .products_list .toplink:hover {
+    color: #333333;
+}
+.flashsale_products .products_list .percent_timer {
+    overflow: hidden;
+    padding: 0 0 0 45px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.flashsale_products .products_list .percent_timer.notimer{
+    border-bottom: 0;
+}
+
+.flashsale_products .products_list .banner {
+    color: #999;
+    font-family: 'roboto-bold','droid-bold';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.flashsale_products .products_list .percent_timer.notimer .banner{
+    opacity: 0;
+}
+
+.flashsale_products .products_list .percentage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    line-height: 30px;
+    background-color: #ccc;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'roboto-bold','droid-bold';
+    font-weight: normal;
+    direction: ltr;
+}
+.flashsale_products .products_list .image {
+    width: 100%;
+    height: 225px;
+    display: table;
+    table-layout: fixed;
+}
+.flashsale_products .products_list .image_inner {
+    text-align: center;
+    height: 225px;
+   display: table-cell;
+   vertical-align: middle;
+}
+.flashsale_products .products_list .image_inner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.flashsale_products .products_list .title {
+    margin: 0px;
+    padding: 0px 10px 10px;
+}
+.flashsale_products .products_list .title p {
+    height: 35px;
+    line-height: 16px;
+    font-size: 11px;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal;
+    color: #444;
+}
+.flashsale_products .products_list .price_link {
+    padding: 0 10px 10px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+.flashsale_products .products_list .product_price {
+    width: 50%;
+    line-height: 30px;
+}
+.flashsale_products .products_list .product_link {
+    text-align: right;
+    width: 50%;
+}
+.ln-ar .flashsale_products .products_list .product_link{
+    text-align: left;
+}
+.flashsale_products .products_list .new_price {
+    font-size: 16px;
+    font-weight: normal;
+    /*color: #fd552f;*/
+    color: #444;
+    display: block;
+    line-height: 16px;
+    font-family: 'roboto-bold', 'droid-bold';
+}
+
+.flashsale_products .products_list .new_price em {
+    font-style: normal;
+}
+.flashsale_products .product_price .old_price {
+    color: #aaa;
+    font-weight: normal;
+    display: block;
+    line-height: initial;
+    font-size: 11px;
+    text-decoration: line-through;;
+}
+.flashsale_products .products_list .buy_now {
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'roboto','droid';
+    background: #FF481F;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.flashsale_products .products_list .soldout {
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'roboto','droid';
+    background: #b5b5b5;
+    position: relative;
+    display: block;
+}
+.flashsale_products .products_list .buy_now:hover {
+    color: #ffffff;
+}
+.flashsale_products .products_list .upcoming {
+    background: #6CB119;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'roboto','droid';
+    position: relative;
+    display: block;
+}
+.flashsale_products .products_list .upcoming:hover {
+    color: #ffffff;
+}
+.products_loading.bundles_loader{
+    margin-top: 20px;
+}
+
+
+/* marketing data */
+.flashsale_products .products_list .list_item.add_analytics {
+    height: 455px;
+}
+
+.analytics_flashsales {
+    margin: 5px 5px 0px;
+    padding: 0px 5px;
+}
+
+.analytics_flashsales .row {
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+
+.analytics_flashsales .row b {
+    display: inline-block;
+    width: 79%;
+    float: left;
+    text-align : left;
+    text-transform : uppercase;
+    color: #444;
+    background: #EAE0DD;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    font-size: 10px;
+}
+
+.analytics_flashsales .row span {
+    display: inline-block;
+    width: 20%;
+    float: right;
+    text-align : right;
+    font-size: 16px;
+    font-family: roboto-bold;
+    background: #EAE0DD;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
