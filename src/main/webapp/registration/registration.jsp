@@ -3,6 +3,9 @@
     Created on : May 9, 2019, 10:59:49 AM
     Author     : DELL
 --%>
+
+<%@page import="java.awt.Toolkit"%>
+<%@page import="java.awt.Dimension"%>
 <%
 
 %>
@@ -14,6 +17,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%
+	
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		if (screenSize.getWidth()>=699) {
+			ServletContext context = getServletContext();
+			RequestDispatcher dispatcher = context.getRequestDispatcher("/mobile/register.jsp");
+			dispatcher.forward(request, response);
+		}
+	%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Maraya Global | Registration</title>
 <link rel="stylesheet" type="text/css" href="css/header/1.css">

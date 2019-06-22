@@ -198,7 +198,7 @@
 							<div class="menu_box">
 								<div class="menu_link tooltip-right" data-tooltip="show video">
 									<a href="javascript:void(0)" class="toggle_nav" id="show-menu"><img
-										src="/bitrix/templates/awok-lang-mobile/images/header/ico_menu.svg"
+										src="../images/design/icon_menu.svg"
 										title=""></a>
 								</div>
 								<aside class="aside_box aside_box_left" id="site_aside_menu-s1"
@@ -209,9 +209,9 @@
 												src="/bitrix/templates/awok-lang-mobile/images/photo.png"
 												alt="" title=""></li>
 											<li class="top_links_left"><a
-												href="/user/login/?backurl=/" class="login">Login</a></li>
+												href="../mobile/login.jsp" class="login">Login</a></li>
 											<li class="top_links_left"><a
-												href="/user/register/?backurl=/" class="signup">
+												href="/mobile/" class="signup">
 													Register</a></li>
 										</ul>
 
@@ -300,7 +300,7 @@
 											<li><a href="/help-info/privacy-policy/">Privacy
 													Policy</a></li>
 											<li><a href="/help-info/terms/">Terms of Service</a></li>
-											<li><a href="https://support.awok.com/" target="_blank">Contact
+											<li><a href="https://support.marayaglobal.com/" target="_blank">Contact
 													Us</a></li>
 											<li><a href="/help-info/site-map/">Sitemap </a></li>
 										</ul>
@@ -349,8 +349,8 @@
 							<!--menu,logo box end-->
 														<div class="logo_box">
 								<a href="/"><img
-									src="https://s5d.awokcdn.com/bitrix/templates/awok-lang-mobile/images/logo.png"
-									alt="AWOK" title="AWOK"></a>
+									src="../images/util/logo.png"
+									alt="Maraya Global" title="Maraya Global"></a>
 							</div>
 						</div>
 
@@ -360,15 +360,15 @@
 								<li class="header_top_links_login"><a href="/track-order/">Track
 										Order</a></li>
 								<li class="header_top_links_cart"><a
-									href="https://global.awok.com/cart/" id="cart_toggle"
+									href="https://marayaglobal.com/cart/" id="cart_toggle"
 									data-event-category="click_tracking"
 									data-event-action="before_view_cart"
 									data-event-label="header-icon"><img
-										src="/bitrix/templates/awok-lang-mobile/images/header/ico_cart.svg"
+										src="../images/design/icon_cart.svg"
 										title=""> </a></li>
 								<li class="header_top_links_search"><a
 									href="javascript:void(0);" id="search_box_show"><img
-										src="/bitrix/templates/awok-lang-mobile/images/header/ico_search.svg"
+										src="../images/design/icon_search.svg"
 										title=""></a></li>
 							</ul>
 						</div>
@@ -522,8 +522,7 @@ $(document).ready(function(){
 				<div
 					class="flashsale_products main_flash_sale_wrapper deals aw_p7 aw_pt0">
 					<ul class="deals_list aw_clear js_dealslist">
-						<li class="deals_item aw_fl_left promo_click" data-event="promo" data-eventid="1280169" data-page="1" data-eventname="Promo-Deals" data-eventcreative="Electronic Luggage Scale Up to 50KG" data-eventposition="2"><div class="deals_itemtop list_item"><a href="https://localhost/scale/electronic_luggage_scale_up_to_50kg/dp-1241324/" class="deals_link aw_block" target="_blank"><div class="aw_row deals_bg notranslate"><span class="deals_timer aw_bold js_dealstimer" data-timestamp="1609437540">00  hrs. 22 min. 58 sec.</span></div><span class="deals_off aw_bold">76</span><div class="aw_row aw_column collapse"><div class="deals_image aw_imagethmb"><span class="aw_imagethmb_inner"></span><img src="https://s5d.awokcdn.com/static/images/products/iblock-7e5-7e563b3283038632d62e195db18a9212.gif/default-155x155.jpg" alt=""></div></div><div class="aw_row aw_column collapse"><div class="deals_title"><p>Electronic Luggage Scale Up to 50KG</p></div></div></a></div><div class="deals_itembottom"><div class="aw_row collapse"><div class="deals_price notranslate"><span class="old_price">Tk21.94</span><span class="new_price aw_bold">Tk5.28</span></div><span class="toast_attributes" data-price="5.28" data-name="Electronic Luggage Scale Up to 50KG" data-img="https://s5d.awokcdn.com/static/images/products/iblock-7e5-7e563b3283038632d62e195db18a9212.gif/default-155x155.jpg"></span><a href="https://localhost/cart/?SKU=1241324&amp;UID=16065d05ce3ece3e8&amp;SSID=3ff56362056ca2fd5fc0c720a5c4e0d2" data-pid="1241324" data-cart-link="/ajax-v2/?bxc=ZGV2LWF3b2s6Y2FydA==&amp;arp=d93df2d872efc9823b64dae08b1ef621&amp;AJAX=Y&amp;SKU=1241324&amp;UID=16065d05ce3ece3e8&amp;SSID=3ff56362056ca2fd5fc0c720a5c4e0d2&amp;popup=Y" class="main_link exec_pop_up deals_buynow " data-event-category="click_tracking" data-event-action="before_add_to_cart" data-event-label="osf">Add to Cart</a></div></div></li>
-					
+						
 					</ul>
 					<div class="bs_products">
 						<a rel="next" href="//global.awok.com/sources/updates/api/rpromo/"

@@ -3927,13 +3927,13 @@ font-size: .8rem
 
 									<a class="dropdown-item" href="profile"><i
 										class="far fa-user pr-3"> </i> My Account</a> <a
-										class="dropdown-item" href="#"><i
+										class="dropdown-item" href="my-orders"><i
 										class="fas fa-truck-moving pr-3"></i>My Order</a> <a
-										class="dropdown-item" href="#"><i
+										class="dropdown-item" href="my-cart"><i
 										class="fas fa-cart-plus pr-3"></i>My Cart</a> <a
-										class="dropdown-item" href="#"><i
+										class="dropdown-item" href="my-coupons"><i
 										class="far fa-credit-card pr-3"></i>Coupons</a> <a
-										class="dropdown-item" href="#"><i
+										class="dropdown-item" href="my-offers"><i
 										class="fas fa-bullhorn pr-3"></i>Offers</a> <a
 										class="dropdown-item logout" id="logout"><i
 										class="fas fa-sign-out-alt pr-3"></i>Logout</a>

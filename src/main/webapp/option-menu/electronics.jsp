@@ -3,6 +3,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<%
+  String userAgent = request.getHeader("user-agent");
+if(userAgent.indexOf("Mobile") != -1){
+	ServletContext context = getServletContext();
+	RequestDispatcher dispatcher = context.getRequestDispatcher("/mobile/cat/electronics.jsp");
+	dispatcher.forward(request, response);
+}
+
+%>
+
 <title>Maraya Global | Electronics</title>
 <link rel="stylesheet" type="text/css" href="css/header/1.css">
 <link rel="stylesheet" type="text/css" href="css/header/2.css">

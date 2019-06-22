@@ -1,19 +1,18 @@
-<%@page import="java.awt.Toolkit"%>
-<%@page import="java.awt.Dimension"%>
+
 <html>
 <head>
 
 
-<%
-	
-	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		if (screenSize.getWidth()<=699) {
-			ServletContext context = getServletContext();
-			RequestDispatcher dispatcher = context.getRequestDispatcher("/test.jsp");
-			dispatcher.forward(request, response);
-		}
-	%>
 
+<%
+String userAgent = request.getHeader("user-agent");
+if(userAgent.indexOf("Mobile") != -1){
+	ServletContext context = getServletContext();
+	RequestDispatcher dispatcher = context.getRequestDispatcher("/mobile/mindex.jsp");
+	dispatcher.forward(request, response);
+}
+
+%>
 
 <title>Maraya Global | Home</title>
 

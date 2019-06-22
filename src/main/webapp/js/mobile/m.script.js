@@ -4,7 +4,7 @@
 $(this).ready(function () {
     var offset = 0;
     var limit = 20;
-    $.get('../webapi/myresource/?start=' + offset + '&end=' + limit
+    $.get('webapi/myresource/?start=' + offset + '&end=' + limit
             + '&keword=Spring Roll', showData, 'json');
 
 
